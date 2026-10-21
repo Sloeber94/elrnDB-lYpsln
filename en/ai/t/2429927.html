@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E7023 ESP - Functional description · Lancia Ypsilon</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods. Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7023 ESP &gt; E7023 ESP - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2428113.html">E70 Vehicle electronic systems</a> › <a href="2428122.html">E7023 ESP</a> › <span>E7023 ESP - Functional description</span></nav>
+<h1><span class="code">E7023</span> ESP - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7023 ESP &gt; E7023 ESP - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429927">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429927</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Functional description</h3><p>ABS electronic control unit 
+                              <strong>M50 is supplied (at pins 12 and
+25) directly by the battery by the line protected by maxifuse F5
+of the engine compartment junction unit B1.</strong></p><p>The ignition-operated supply (INT/A) reaches
+pin 23 from the line protected by the fuse 
+                              <strong>F42 of under facia
+control unit B2.</strong></p><p>The control unit is earthed via pins 11
+and 24.</p><p>The four sensors 
+                              <strong>K70, K71, K75, K76 send
+wheel speed signals tp pins 20-19, 8-7, 22-21, 10-9 of M50, respectively.</strong></p><p>Brake pedal switch 
+                              <strong>I30 sends an enablement
+signal to pin 17 of control unit M50: the ABS cannot intervene unless
+the brake pedal is pressed.</strong>
+                               The switch 
+                              <strong>I30</strong>
+                               is supplied
+when the ignition is switched on (INT) from fuse F37 of junction
+unit 
+                              <strong>B2</strong>
+                              .</p><p>Pin 16 ofi 
+                              <strong>M50 emits a discrete speed
+signal that is sent tol Body Computer M1;</strong>
+                               the same signal is
+also copied via the CAN network.</p><p>The steering sensor is contained in the
+electric steering control unit 
+                              <strong>M86 which is connected to the
+ABS control unit M50 via the CAN.</strong></p><p>The yaw (and lateral acceleration) sensor 
+                              <strong>K74
+receives an ignition-operated supply at pin 1 from the line protected
+by fuse F42 of the junction unit under the dashboard B2;</strong>
+                               pin
+6 is earthed, whilst pins 5 and 3 are connected to the ABS control
+unit 
+                              <strong>M50 via the CAN.</strong></p><p>The &#x27;ASR OFF&#x27; control button on panel 
+                              <strong>H90
+sends a deactivation signal to pin 3 of M50, while pin 4  relays
+a signal that turns on an LED on panel H90 when the system is off;</strong>
+                               ; The
+switch 
+                              <strong>H90 is supplied when the ignition is switched on (INT)
+from fuse F49 of junction unit B2.</strong></p><p>Pins 1 and 2 of ABS control unit 
+                              <strong>M50
+connect to engine control unit M10,  Body Computer M1 and and instrument
+panel E50 to control the ABS, insufficient brake fluid and handbrake
+applied warning lights and the ASR/ESP and HH warning lights.</strong></p><p>The special &#x27;fault&#x27; warning light comes
+on if there is a problem with one of the above mentioned warning
+lights.</p><p>Self-diagnostic data can be read by connecting
+to connector C of Body Computer 
+                              <strong>M1- pin 1: it receives signals
+from pin 6 of the control unit M50 via the special diagnostic line.</strong><a href="2428143.html">E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a></p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="2428143.html">E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E2510 COURTESY LIGHTS - Description · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods. Electrical equipment &gt; Electrical functions &gt; E25 Interior lighting &gt; E2510 COURTESY LIGHTS &gt; E2510 COURTESY LIGHTS - Description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2427935.html">E25 Interior lighting</a> › <a href="2427936.html">E2510 COURTESY LIGHTS</a> › <span>E2510 COURTESY LIGHTS - Description</span></nav>
+<h1><span class="code">E2510</span> COURTESY LIGHTS - Description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E25 Interior lighting &gt; E2510 COURTESY LIGHTS &gt; E2510 COURTESY LIGHTS - Description</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427937">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427937</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Description</h3><p>The front courtesy light includes three bulbs with three control switches:</p><ul><li>the map reading lights can be switched on via the outside
+switches.</li><li>the centre switch can be used to switch the centre light
+on or off and it also has a delay function as described below.</li></ul><p>The front courtesy light timing is controlled according to a logic managed by the Body Computer, whilst that of the rear is controlled by the door control units in accordance with a logic transmitted via the CAN from the Body Computer:</p><ul><li>when one of the doors is opened, the courtesy light is
+timed to stay on for 3 minutes;</li><li>if, whilst opening one door, another is opened, the counting
+of the three minutes starts again from zero;</li><li>if a door remains open for longer than three minutes,
+the courtesy light goes out and remains off until one of the doors
+is next opened;</li><li>If, during this period of 3 minutes, all the doors are
+closed again, a second period of 10 seconds is activated and is
+interrupted if the ignition key is turned on;</li><li>when the doors are unlocked using the remote control,
+the courtesy light comes on for 10 seconds; the timing is interrupted
+if the ignition key is turned ON;</li><li>when the doors are closed and locked, the courtesy light
+goes out immediately.</li></ul><p>The switching off and on should be gradual
+(dimmer) with a cycle lasting 2 seconds.</p><p>The courtesy light also comes on for 15
+minutes if the inertia switch is operated (the information is sent
+via the instrument panel CAN).  This function is activated with
+the ignition key in the ON position.</p><p>The map reading lights come on by activating
+the button, but go out automatically after 15 minutes.</p><p>The Body Computer continuously acquires
+the &#x27;battery voltage&#x27; signal and compares it with a limit (&#x27;SBMT&#x27;
+function): if the battery voltage level goes below this limit, it
+intervenes through the CAN sending a signal to disable a series
+of loads: these include the front courtesy light; this function
+is activated with the key in the OFF position; this function also
+deactivates loads after the key has been in the OFF position for
+15 minutes.</p><p>The map reading lights are turned on using
+the button, but go out automatically after 15 minutes.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

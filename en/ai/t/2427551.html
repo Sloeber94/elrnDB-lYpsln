@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K44 Data not available yet · Lancia Ypsilon</title>
+<meta name="description" content="fault diagnosis table (symptom -&gt; numbered test steps). all engines; all production periods. Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K44 Data not available yet">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427465.html">Fault diagnosis</a> › <a href="2427528.html">K INSTRUMENT PANEL</a> › <span>K44 Data not available yet</span></nav>
+<h1><span class="code">K44</span> Data not available yet</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K44 Data not available yet</dd>
+<dt>Kind</dt><dd>fault diagnosis table (symptom -&gt; numbered test steps)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427551">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427551</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>The fuel consumption
+indiator in the display (one of the TRIP COMPUTER module displays)
+does not work with te ignition ON.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The display shows two types of
+fuel consumption, instantaneous and average. The fuel consumption
+figures are processed by the instrument panel node on the basis of
+the information received from the body computer node (distance)
+and from the engine management node (litres consumed), made available
+to the instrument panel node via the B-CAN and the C-CAN, respectively.</p></aside><p>If there is no speed information (from the Brake Node) or instantaneous
+fuel consumption (from the Engine Management Node) the consumption
+figure will be replaced by &#x27;----&#x27;</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><div class="table"><table><tr><td></td><td></td><td colspan="3"><p>Results of the tests</p></td></tr><tr><th><p>0</p></th><th><p>PRELIMINARY CHECKS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Speak
+to the customer to check that the TRIP functions have not just been
+reset</p></td><td rowspan="1"><p>Continue to Step <strong>1</strong></p></td><td><p>One of the TRIP COMPUTER functions
+has been reset</p></td><td><p>The information displayed will be &#x27;----&#x27; until a stretch
+of road sufficient to evaluate the consumption is travelled along:
+if the value is not displayed after a few kilometres</p><p>Continue
+to Step <strong>1</strong></p></td></tr><tr><th><p>1</p></th><th><p>CAN CHECKS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Connect the EXAMINER diagnostic equipment and check the CAN NETWORK INFORMATION:</p><ul><li>For inactive control units</li><li>For control units with errors</li><li>For control units with CAN errors</li></ul></td><td rowspan="2"><p>Continue to Step <strong>2</strong></p></td><td><p>Presence of fault in the
+CAN</p></td><td><p>Continue
+as instructed by the tester</p></td></tr><tr><td><p>Impossible to converse with the Body Computer</p></td><td><p>Continue to Step <strong>9</strong></p></td></tr><tr><th><p>2</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keep the tester connected and check the BRAKE NODE for:</p><ul><li>System/component faults</li><li>CAN faults</li></ul></td><td rowspan="2"><p>Continue to Step <strong>3</strong></p></td><td><p>System/component faults</p></td><td><p>Continue as instructed by
+the tester</p></td></tr><tr><td><p>Presence of C-CAN faults</p></td><td><p>Continue to Step <strong>11</strong></p></td></tr><tr><th><p>3</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keeping the diagnostic equipment connected, check for the following at the ENGINE MANAGEMENT NODE:</p><ul><li>System/component faults</li><li>CAN faults</li></ul></td><td rowspan="2"><p>Continue to Step <strong>4</strong></p></td><td><p>System/component faults</p></td><td><p>Continue as instructed by
+the tester</p></td></tr><tr><td><p>Presence of C-CAN faults</p></td><td><p>Continue to Step <strong>11</strong></p></td></tr><tr><th><p>4</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keeping the diagnostic equipment connected, check at the INSTRUMENT PANEL NODE:</p><ul><li>System/component faults</li><li>CAN faults</li></ul></td><td rowspan="2"><p>Continue to Step <strong>12</strong></p></td><td><p>System/component faults</p></td><td><p>Continue as instructed by
+the tester</p></td></tr><tr><td><p>Presence of C-CAN faults</p></td><td><p>Continue to Step <strong>11</strong></p></td></tr><tr><th><p>5</p></th><th><p>CHECK WITH ACTIVE DIAGNOSIS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>With
+the Examiner in the Instrument Panel Node ambient, check, in active
+diagnosis, that all the segments in the LCD module are correctly
+activated</p></td><td rowspan="2"><p>Continue to Step <strong>8</strong></p></td><td><p>One or more segments are
+not activated</p></td><td><p>Replace the instrument panel <strong>Op. 5560B11</strong></p></td></tr><tr><td><p>Impossible to converse with the instrument panel</p></td><td><p>Continue to Step <strong>6</strong></p></td></tr><tr><th><p>6</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Instrument Panel Node electrical power supply is correct</p></td><td rowspan="1"><p>Continue to Step <strong>7</strong></p></td><td><p>Positive and/or earth
+electrical power supply faulty</p></td><td><p>Replace the component involved (if a fuse is involved,
+search for the cause of the problem)</p></td></tr><tr><th><p>7</p></th><th><p>CHECK ELECTRICAL CONNECTIONS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+the electrical connections between the Body Computer and the Instrument
+Panel, in particular that each individual pin is correctly connected</p></td><td rowspan="1"><p>Continue to Step <strong>5</strong></p></td><td><p>Electrical connections
+not working</p></td><td><p>Restore damaged electrical connections.</p></td></tr><tr><th><p>8</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Using
+the Examiner check, in the Body Computer Node ambient, that there
+are no errors</p></td><td rowspan="2"><p>Continue to Step <strong>11</strong></p></td><td><p>Impossible to connect
+with the Body Computer control unit</p></td><td><p>Continue to Step <strong>9</strong></p></td></tr><tr><td><p>There are errors</p></td><td><p>Continue in accordance with the instructions for the
+diagnostic equipment</p></td></tr><tr><th><p>9</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Body Computer Node electrical power supply is correct.</p></td><td rowspan="1"><p>Continue to Step <strong>10</strong></p></td><td><p>Positive and/or earth
+electrical power supply fault.</p></td><td><p>Replace the defective component (if a fuse
+is involved, search for the cause of the problem).</p></td></tr><tr><th><p>10</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Using
+the Examiner, check the possibility of connecting with the Body
+Computer Node.</p></td><td rowspan="1"><p>Continue to Step <strong>8</strong></p></td><td><p>Impossible to connect
+with the Body Computer control unit.</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr><tr><th><p>11</p></th><th><p>CHECK ON CORRECT OPERATION</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the fault is no longer present</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>The fault persists</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr></table></div></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

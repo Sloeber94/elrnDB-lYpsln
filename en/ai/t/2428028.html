@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E4010 INSTRUMENT PANEL - Description · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods. Electrical equipment &gt; Electrical functions &gt; E40 Instrument panel &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - Description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2428026.html">E40 Instrument panel</a> › <a href="2428027.html">E4010 INSTRUMENT PANEL</a> › <span>E4010 INSTRUMENT PANEL - Description</span></nav>
+<h1><span class="code">E4010</span> INSTRUMENT PANEL - Description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E40 Instrument panel &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - Description</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2428028">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2428028</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Description</h3><p>The gauges and warning lights which form the instrument panel are grouped in a single instrument containing:</p><ul><li>electronic speedometer</li><li>electronic rev counter</li><li>coolant temperature gauge, with overheating warning light</li><li>fuel gauge, with reserve warning light</li><li>warning lights.</li></ul><p>The instrument panel is a node on the CAN
+network through which it exchanges information with the Body Computer
+and the other electronic units.</p><p>Speedometer: the function displays the vehicle
+speed on the instrument panel: this information comes from the ABS
+control unit, via the Body Computer.</p><p>Engine rpm: the function displays the engine
+rpm on the instrument panel, via the message sent on the CAN network
+from the engine management control unit.</p><p>Odometer: this function displays and memorises
+the total mileage counter and trip recorder: the distance travelled
+information is processed by the Body Computer via a counter; the
+specific button located on the panel beside the steering wheel resets
+the trip recorder.</p><p>Fuel gauge: the Body Computer receives the
+signal from the sensor integrated in the pump unit in the fuel tank
+and processes it so as to ensure appropriate filtering / damping
+to the instrument panel gauge, and also controls the lighting up
+of the &#x27;reserve&#x27; warning light.</p><p>Engine water temperature: the function displays
+the water temperature on the instrument panel and lights up the
+water overheating warning light by means of the messages sent via the
+CAN network from the engine management control unit.</p><p>Minimum engine oil pressure: the function
+lights up the minimum oil pressure warning light on the instrument
+panel via the message sent on the CAN network from the engine management
+control unit.</p><p>Brake pad wear: the function lights up the
+specific warning light: the Body Computer detects the state of the
+brake pad wear associated with the presence of braking (signal from
+the brake pedal) which is prolonged (intermittent indications are
+ignored).</p><p>Inertial switch state: the instrument panel
+receives a signal from the switch, lights up the relevant warning
+light and communicates the activation to the other nodes via the
+CAN network.</p><p>Handbrake on: the warning light relating
+to the handbrake state is controlled by the specific switch; in
+addition, if this signal is associated with a particular speed threshold being
+surpassed, an acoustic signal is activated: the signal is sent via
+the CAN from the Body Computer.</p><p>Low brake fluid: the function lights up
+the &#x27;low brake fluid level&#x27; warning light on the instrument panel:
+the signal is sent via the CAN from the Body Computer.</p><p>General warning signal (check): the Body Computer contains a check function which controls a series of systems and components and lights up the appropriate warning light if a fault is detected; the following systems and/or components are controlled:</p><ul><li>Operation of inertia switch</li><li>Exceeding of speed limit<a href="2428031.html">E4080 TRIP COMPUTER</a></li><li>Engine oil pressure sensor failure<a href="2428068.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a>,<a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></li><li>Rain sensor failure<a href="2427953.html">E3020 WINDSCREEN WASH/WIPE</a></li><li>Diesel filter sensor failure<a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></li><li>Dusk sensor failure<a href="2427899.html">E2010 SIDE LIGHTS / NO. PLATE LIGHTS</a></li><li>Window safety system failure<a href="2427993.html">E3050 ELECTRIC FRONT WINDOWS</a></li><li>ABS, ESP warning light failure  insufficient brake fluid
+level<a href="2428118.html">E7020 ABS</a>,<a href="2428122.html">E7023 ESP</a>]</li><li>Electric steering fault<a href="2428130.html">E7045 ELECTRIC STEERING</a></li><li>Exterior lights failure: side, no. plate, rear fog, direction,
+brake<a href="2427899.html">E2010 SIDE LIGHTS / NO. PLATE LIGHTS</a><a href="2427911.html">E2020 DIRECTION INDICATORS / HAZARD WARNING LIGHTS</a><a href="2427915.html">E2021 BRAKE LIGHTS</a>,<a href="2427927.html">E2031 REAR FOG LAMPS</a></li><li>Brake lights fuse failure<a href="2427915.html">E2021 BRAKE LIGHTS</a></li><li>Engine coolant temperature sensor failure<a href="2428068.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a>,<a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></li><li>Robotized gearbox failure<a href="2428134.html">E7051 ROBOTIZED GEARBOX</a></li></ul><p>Other warning lights are located on the instrument panel, but managed directly by other electronic units:</p><ul><li>Air Bag failure warning light;</li><li>passenger Air Bag disablement warning light;</li><li>injection failure warning light</li></ul><p>For more details 
+                              <a href="2427445.html">5560 INSTRUMENT PANEL</a>
+                              .</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>this diagram illustrates the operation
+of the warning lights not contained in other functions; the others
+are described and illustrated in the diagrams of the components
+to which they refer:</p></aside><p>side lights 
+                              <a href="2427899.html">E2010 SIDE LIGHTS / NO. PLATE LIGHTS</a></p><p>main beam headlamps 
+                              <a href="2427907.html">E2012 MAIN BEAM HEADLAMPS</a></p><p>turn signals 
+                              <a href="2427911.html">E2020 DIRECTION INDICATORS / HAZARD WARNING LIGHTS</a></p><p>fog lights 
+                              <a href="2427923.html">E2030 FOG LIGHTS</a></p><p>rear fog lamps 
+                              <a href="2427927.html">E2031 REAR FOG LAMPS</a></p><p>doors open 
+                              <a href="2427936.html">E2510 COURTESY LIGHTS</a></p><p>recharging 
+                              <a href="2428036.html">E5010 STARTING AND RECHARING</a></p><p>EOBD injection system failure 
+                              <a href="2428068.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a><a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></p><p>minimum oil pressure 
+                              <a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></p><p>engine overheating 
+                              <a href="2428068.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a>
+                              , 
+
+                              <a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></p><p>heater plugs 
+                              <a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></p><p>Cruise Control 
+                              <a href="2428080.html">E5060 CRUISE CONTROL</a></p><p>CODE failure 
+                              <a href="2428114.html">E7010 CODE</a></p><p>ABS - EBD failure 
+                              <a href="2428118.html">E7020 ABS</a></p><p>ESP on/failure  
+                              <a href="2428122.html">E7023 ESP</a></p><p>Hill Holder on/failure 
+                              <a href="2428122.html">E7023 ESP</a></p><p>Air Bag failure 
+                              <a href="2428126.html">E7030 AIRBAG</a></p><p>passenger Air Bag disabled 
+                              <a href="2428126.html">E7030 AIRBAG</a></p><p>robotized gearbox failure 
+                              <a href="2428134.html">E7051 ROBOTIZED GEARBOX</a></p><p>electric steering fault 
+                              <a href="2428130.html">E7045 ELECTRIC STEERING</a></p></section>
+<h2>Topics linked from this page (21)</h2><ul><li><a href="2427445.html">5560 INSTRUMENT PANEL</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427899.html">E2010 SIDE LIGHTS / NO. PLATE LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427907.html">E2012 MAIN BEAM HEADLAMPS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427911.html">E2020 DIRECTION INDICATORS / HAZARD WARNING LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427915.html">E2021 BRAKE LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427923.html">E2030 FOG LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427927.html">E2031 REAR FOG LAMPS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427936.html">E2510 COURTESY LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427953.html">E3020 WINDSCREEN WASH/WIPE</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2427993.html">E3050 ELECTRIC FRONT WINDOWS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods; only with equipment: High setup</span></li><li><a href="2428031.html">E4080 TRIP COMPUTER</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428036.html">E5010 STARTING AND RECHARING</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods; only with equipment: Smart gearbox</span></li><li><a href="2428068.html">E5030 PETROL ENGINE ELECTRONIC MANAGEMENT</a> <span class="meta">chapter (index of subtopics) · engines: 1.2 8v; all production periods</span></li><li><a href="2428076.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods</span></li><li><a href="2428080.html">E5060 CRUISE CONTROL</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods</span></li><li><a href="2428114.html">E7010 CODE</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428118.html">E7020 ABS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428122.html">E7023 ESP</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428126.html">E7030 AIRBAG</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428130.html">E7045 ELECTRIC STEERING</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428134.html">E7051 ROBOTIZED GEARBOX</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods; only with equipment: Smart gearbox</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+
+<svg  width="199.4pt" height="86pt" viewBox="0 0 199.4 86" xml:space="preserve">
+	<g id="Livello_x0020_1" style="fill-rule:nonzero;clip-rule:nonzero;fill:none;stroke:#000000;stroke-width:0.5669;stroke-miterlimit:4; font-family:'Arial-Black'; font-size:12;">
+		<g>
+			<path style="stroke-width:0.8504;" d="M20.3,25.5h-7v27.3h171.3V25.2H178v-7h-8.3v-7.3h-2v10.7h-13.3V10.8H152v10.3h-13.3v-3.3h-2v3.7h-13.3v-3.3H121v3.3h-13.7v-3.3h-2v3h-13v-3H90v3.3H77v-2.7h-2.7v2.3h-13v-3.3h-2v3H46v-2.7h-2.3v3h-13v-3H20.3v7.3z"/>
+			<path d="M20.3,25.5h9.9v-4.3"/>
+			<path d="M27,25.8c0,0.8,0,23.3,0,23.3h144.3V25.3"/>
+			<path d="M178,25.2H44l-8.3-3.9"/>
+			<path d="M167.7,21.5v3"/>
+			<path d="M44.3,44V30.5H31V44h13.3z"/>
+			<path d="M59.8,44V30.5H46.5V44h13.3z"/>
+			<path d="M75.3,44V30.5H62V44h13.3z"/>
+			<path d="M90.8,44V30.5H77.5V44h13.3z"/>
+			<path d="M121,44V30.5h-13.3V44H121z"/>
+			<path d="M136.8,44V30.5h-13.3V44h13.3z"/>
+			<path d="M152.3,44V30.5H139V44h13.3z"/>
+			<path d="M167.5,44V30.5h-13.3V44h13.3z"/>
+			<path d="M105.8,43.8V30.3H92.5v13.5h13.3z"/>
+			<path style="stroke-width:1.1338;" d="M160.3,40.3V66"/>
+			<path style="stroke-width:1.1338;" d="M37.3,40.3V66"/>
+			<text transform="matrix(1 0 0 1 153.25 77.5)"><tspan x="0" y="0" style="fill:#000000;stroke:none;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 161.2422 77.5)"><tspan x="0" y="0" style="fill:#000000;stroke:none;">0</tspan></text>
+			<text transform="matrix(1 0 0 1 30.5 77.5)"><tspan x="0" y="0" style="fill:#000000;stroke:none;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 38.4922 77.5)"><tspan x="0" y="0" style="fill:#000000;stroke:none;">8</tspan></text>
+			<path style="stroke:#FFFFFF;stroke-width:1;" d="M198.9,85.5v-85H0.5v85h198.4z"/>
+		</g>
+	</g>
+</svg>

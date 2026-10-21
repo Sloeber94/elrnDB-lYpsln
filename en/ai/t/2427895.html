@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E1050 CAN CONNECTION LINES - Description · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods. Electrical equipment &gt; Electrical functions &gt; E10 Power supply and earths &gt; E1050 CAN CONNECTION LINES &gt; E1050 CAN CONNECTION LINES - Description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2427885.html">E10 Power supply and earths</a> › <a href="2427894.html">E1050 CAN CONNECTION LINES</a> › <span>E1050 CAN CONNECTION LINES - Description</span></nav>
+<h1><span class="code">E1050</span> CAN CONNECTION LINES - Description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E10 Power supply and earths &gt; E1050 CAN CONNECTION LINES &gt; E1050 CAN CONNECTION LINES - Description</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427895">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427895</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Description</h3><p>This vehicle features a CAN network (Controller Area Network) system of electrical connections: it involves a software and hardware solution which is designed to manage the resources on the vehicle in an increasingly efficient way, allowing:</p><ul><li>data to be shared between the various electronic units;</li><li>the integration of several electronic units in one network;</li><li>a high data exchange speed in the network;</li><li>cost-effective solutions, since the number of wiring harnesses
+and connectors are considerably reduced in the vehicle;</li><li>a higher standard in terms of quality and reliability.</li></ul><p>The advantage of using a CAN system stems
+from the fact that the communication involves numerous control units
+and consequently the number of signals managed is very high.</p><p>For this reason the signals &#x27;travel&#x27; on
+CAN type (double) serial Bus, where one wire is associated with
+the high level (H) and the other the low level (L); These CAN Bus
+signals are differential, i.e. the value assigned to each bit is
+represented by the different voltge of CAN-H and CAN-L.</p><p>The various electronic units which make
+up the system, known as network &#x27;Nodes&#x27;, are connected to the CAN
+by means of communication interfaces known as transreceivers; These
+connection interfaces, integrated in the actual electronic units,
+form the gates for sending/reading information at the CAN or at
+the serial lines.</p><p>A &#x27;transmission protocol&#x27;, i.e. the set
+of rules allowing the communication between two or more ECUs (called
+Nodes) by means of data or data package exchanges, is required for CAN
+serial line data circulation.</p><p>The main element in the network is the Body
+Computer.</p><p>The Body Computer node &#x27;wakes the system
+up&#x27; when the ignition key is turned to the ON position (if there
+is a Body Computer failure, the task of waking the system up is
+entrusted to the instrument panel).</p><p>The Body Computer also carries out the functions of controlling the network, which makes it possible to supply information on:</p><ul><li>the network activity status;</li><li>the functional failure status of the individual electronic
+units (nodes);</li><li>the possible CAN failure.</li></ul><p>The various electronic units process the
+various signals coming from their sensors both for their own management
+and for the other control units, to which they are sent via the CAN</p><p>The specific structure adopted on this vehicle consists of two CANs which connect nodes belonging to two different areas:</p><ul><li>C-CAN for &#x27;dynamic control&#x27; of the vehicle (high speed):
+bus CAN-H and CAN-L;</li><li>B-CAN for the management of &#x27;bodywork functions&#x27; (low
+speed): bus CAN-A and CAN-B;</li><li>te two CAN communication networks are connected to one
+another by means of a gateway for transferring joint information,
+located in the Body Computer Node.</li></ul><p>The diagnosis of the nodes connected to
+the bodywork network is achieved via the CAN, whilst the vehicle
+dynamic control network is diagnosed using the special K lines 
+
+                              <a href="2428143.html">E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a>
+                              .</p><p>The system also uses additionional &#x27;traditional&#x27;
+serial lines for the various connections; for example, in the connection
+between the Body Computer and the alarm / volumetric sensors 
+
+                              
+                              .</p><p>The distribution of power takes place via
+the junction units and/or fuse boxes, connected to the control elements
+(relays and static actuators) in order to ensure the maximum level of
+electrical protection and the minimum degree of wiring complexity 
+
+                              <a href="2427886.html">E1010 SUPPLY</a>
+                              .</p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="2427886.html">E1010 SUPPLY</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="2428143.html">E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

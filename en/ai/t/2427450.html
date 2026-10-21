@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5580E anti-theft device · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods. Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5580 SPECIAL ACCESSORIES &gt; 5580E anti-theft device">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427361.html">Descriptions</a> › <a href="2427440.html">55 ELECTRICAL EQUIPMENT</a> › <a href="2427447.html">5580 SPECIAL ACCESSORIES</a> › <span>5580E anti-theft device</span></nav>
+<h1><span class="code">5580E</span> anti-theft device</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5580 SPECIAL ACCESSORIES &gt; 5580E anti-theft device</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427450">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427450</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>The anti-theft device consists
+of the CODE system which immobilizes the engine.</p><p>OVERALL VIEW</p><figure class="photo"><img class="zoomable" src="../../../media/2043210.jpg" alt="" loading="lazy"></figure><p>1 - BCN
+	2 - ECN
+	3 - Aerial
+	4 - Key</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>SPECIFCATIONS</h2><p>For the engine immobilizer function,
+the cars are fitted with an electronic system called LANCIA CODE
+II.</p><p>The LANCIA CODE system allows the engine
+to start by means of the Engine Mangagement Node (hereafter called
+NCM) only after receiving a secret code memorised previously.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SYSTEM SPECIFICATIONS</h3><p>The second generation Code system
+is integrated in the Body Computer Node (hereafter called NBC).</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>COMPOSITION</h2><p>The LANCIA CODE system comprises 5 basic elements (in addition to the Body Computer which acts as control unit):</p><ul><li>C CAN line for dialogue with BCN and ECN</li><li>bidirectional serial line for recovery ( W line)</li><li>two to eight electronic keys containing a transponder
+with a secret code;</li><li>an aerial which reads the code contained in the key
+transponders;</li><li>engine control unit (NCM)</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>GENERAL</h3><p>The LANCIA CODE allows engine
+control management to be commenced by the NCM by coded dialogue
+between the NBC and NCM during the pre-starting stage.</p><p>After the ignition is switched on, the NCM
+sends a request code to the NBC which responds only after recognizing
+(via the aerial) a known electronic key inserted in the ignition
+switch. If the secret code contained in the response is valid, the
+ECM continues with the usual engine control activity, allowing the
+engine to be started.</p><p>The NCM can memorise the secret code only
+by means of a particular procedure.</p><p>The LANCIA CODE function is also guaranteed
+in the case of malfunction of the other NBC functions.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>INTERACTION OF LANCIA CODE WITH THE KEY</h3><p>Each key contains a transponder
+with the IDENTIFIER CODE and the SECRET CODE.</p><p>As soon as the ignition is switched on (+15),
+the transponder sends the identifier to the LANCIA CODE which, recognising it
+as one of the enabled ones, proceeds with the strategy for recognising
+the SECRET CODE.</p><p>If the identifier is not recognised, the
+procedure aborts, preventing the engine from being started.</p><p>The SECRET CODE is recognised by means of
+a challenge-response algorithm with exchange of encrypted code.</p><p>The code recognition time does not exceed
+160 ms per attempt.</p><p>The LANCIA CODE attempts for 1 second to
+acquire the transponder.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DIALOGUE BETWEEN ENGINE MANAGEMENT NODE AND LANCIA
+CODE</h3><p>The dialogue between the LANCIA
+CODE (NBC) and the NCM takes place via the C-CAN under normal operating
+conditions. Each exchange of information between the LANCIA CODE
+and the NCM (the LANCIA CODE never interrogates the NCM, but only
+answers after a request from the latter).</p><p>When the ignition is switched on, the flow
+of operations involving code exchange between the LANCIA CODE and
+the NCM depends on the state (virgin or memorised) of the NCM.</p><p>If the NCM is virgin, the procedure involves
+the fix code request to the LANCIA CODE: in this way, the NCM learns
+and memorises the secret code. This procedure is called CODE RECORDING.</p><p>If the NCM is programmed, the procedure
+involves checking that the fix code memorised in the engine control
+unit is the same as that memorised in the LANCIA CODE (NBC): the
+NCM asks the NBC for the secret code and compares it with its own.
+This procedure is called CODE VERIFY</p><figure class="photo"><img class="zoomable" src="../../../media/2043211.jpg" alt="" loading="lazy"></figure><p>1 - Key on
+	2 - NCM initialisation
+	3 - Memorised ECN state OK, virgin OK
+	AT CODE VERIFY
+	7 is the code valid?
+	8 engine operation is permitted
+	9 engine operation is not permitted
+	B CODE RECORDING (code memorisation)
+	4 memorisation completed correctly?
+	5 engine operation is permitted
+	6 engine operation is not permitted</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CODE RECORDING</h3><p>The CODE RECORDING procedure
+is the memorisation of the fix code in the engine control unit.</p><p>Only after memorising the identifiers, secret
+code and fix code, the LANCIA CODE is ready to meet the request
+to transmit a code from the NCM which is still virgin.</p><p>After &#x27;power on&#x27;, the engine control unit
+initialises its software and, if it is virgin, asks for the fix
+code.</p><p>If the LANCIA CODE is not virgin, it will
+respond by sending the fix code, but only after recognising an enabled
+key. If it is a disabled (unknown) key or there is no key, the LANCIA
+CODE does not respond.</p><p>If the LANCIA CODE is virgin and there is
+no transponder in the key and a fix code request is sent from the
+NCM, the LANCIA CODE does not respond.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CODE VERIFY</h3><p>This is the standard procedure
+which is repeated during the life the car whenever the driver inserts
+the key in the ignition switch and turns the ignition on (+15) (=
+KEY ON): this procedure allows engine starting if the inserted key
+is enabled.</p><p>The code verify procedure continues even
+wne the driver turns the key to +50 (CRANKING).</p><p>After the key is on KEY ON, the LANCIA CODE
+recognises whether the transponder in the key is one of the enabled
+ones.</p><p>At the same time, with the key on +15 or
++50, the ECN initialises its software to verify whether a fix code
+has already been memorised. If it has, it will send a (FIX code
+request) to the LANCIA CODE.</p><p>In response to this request, the LANCIA
+CODE will send the fix code, encrypted, to the engine control unit,
+only if the transponder has been recognised as enabled.</p><p>If the LANCIA CODE receives further FIX
+code requests, it again reads the transponder in the aerial before
+responding to the NCM.</p><p>If the result of the transponder recognition
+is negative (incorrect transponder, no transponder in the key, etc.),
+the LANCIA CODE will send the code (incorrect transponder or no
+transponder) to the engine control unit.</p><p>If the LANCIA CODE is virgin and the ECN
+sends a FIX code request, the LANCIA CODE, after recognising a transponder, responds
+by sending an encrypted virgin ECN recognised transponder code.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>METHOD OF USING C-CAN OR RECOVERY W LINE</h3><p>Communication between the BCN and ECN takes place by default on the C-CAN line; if the C-CAN network is faulty, the recovery strategy is as follows:</p><ul><li>the ECN passes on to recovery on the W serial line,
+requesting the code from the BCN: if the outcome is positive, starting
+is permitted</li><li>if there are also problems on the W line, after re-transmission
+attempts, the ECN passes on to recovery from the accelerator pedal
+or the diagnostic instrument.</li></ul><p>The recovery strategy is main managed by
+the ECN which acts as master in the communication: the BCN, which
+has to respond to code requests coming from both the C-CAN network
+and the W serial line.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>COMMUNICATION ON C-CAN NETWORK</h3><p>The communication between Body Computer and ECN is achieved by the following two CAN messages:</p><ul><li>Immo code request (sent from ECN and received by BCN)</li><li>Immo code response (sent from BCN and received by ECN)</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>COMMUNICATION ON W LINE</h3><p>If, because of a malfunction
+on the CAN network, you move on to the recovery condition, the exchange
+of codes between ECN and BCN takes place on the W serial line.</p><p>This code exchange takes place only for
+the CODE VERIFY procedure: it is therefore not possible to carry
+out a CODE RECORDING on the W line.</p><p>The data exchange on the serial line takes
+place in the same way as on the C-CAN network: the ECN control unit
+is master of the communication, while the BCN responds to the requests
+received from the ECN.</p><p>Two messages travel on the serial line:
+immo code request and immo code response</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>VERIFYING W LINE ELECTRICAL CONNECTION</h3><p>As the dialogue on the W line
+only takes place in the case of recovery, an ERROR condition would
+only be recognised at the time of use, so the end customer would
+not be able to move the car.</p><p>A strategy of verifying the W serial line
+is therefore introduced in order to diagnose the line itself.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>PROTECTION CODES</h3><p>The protection codes used by
+BCN and ECN are given below</p><p>UNIVERSAL CODE: this is the code which the
+LANCIA CODE, not yet programmed, sends to the ECN when it has recognised
+the presence of a transponder in the key.</p><p>The LANCIA CODE warning light comes on at
+a frequency of 1.6 Hz and duty cycle of 50%.</p><p>The flashing of the light explains that
+the system is correctly connected and working, but the car is not
+protected by a code.</p><p>IMMO CODE: This is the basic code from which
+the secret code and fix code are obtained. An automatically generated immmo
+code is associated with each car. All the other secret codes used
+by the LANCIA CODE function are generated from the immo code.</p><p>SECRET CODE: This is the code resident in
+the transponder. It is memorised in the transponders contained in
+the car keys at the time of programming the transponders, and in
+the LANCIA CODE at the time of programming the keys at the end of the
+line.</p><p>FIX CODE: This is memorised in the LANCIA
+CODE at the time of end-of-line programming.</p><p>ELECTRONIC CODE (PIN): This is obtained
+from the fix code and is stamped on the CODE CARD which is delivered
+to the car&#x27;s owner; it is a 5-digit decimal code (0 is not permitted).</p><p>It is used to access, in a protected manner,
+the BCN memory in order to re-programme or programme new remote
+control keys and/or carry out particular diagnostic functions.</p><p>It is also used in the procedure of recovery
+from accelerator pedal described in the engine control unit specification.</p><p>IDENTIFIER: It is resident in the transponder
+and is different for each transponder. It is memorised in the LANCIA
+CODE during the programming procedure. The LANCIA CODE manages a
+table of enabled identifications and one for disabled identifications.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>DESCRIPTION OF THE COMPONENTS</h2><p>The LANCIA CODE on the vehicle
+is a function of the NBC</p><p>The main functions of the LANCIA CODE are:</p><ul><li>to recognise the introduction and rotation of a key
+in the ignition switch (+15);</li><li>to de-activate the alarm after recognition of an enabled
+key;</li><li>to emit an electromagnetic field to read the key&#x27;s transponder;</li><li>to send the random code to the transponder;</li><li>to receive the cryptographic code emitted by the key;</li><li>to memorise up to 8 identifiers;</li><li>to memorise the secret code;</li><li>to manage a list of a maximum of 8 enabled identifiers;</li><li>to manage a list of at least 16 permanently disabled
+identifiers;</li><li>to manage the C-CAN line to the engine control unit;</li><li>to manage the lighting up of the warning light on the
+panel by communication with the instrument paenel;</li><li>to carry out self-diagnosis.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>supply of new LANCIA CODE</h3><p>In the case of replacement of
+the LANCIA CODE, the entire BODY COMPUTER needs to be replaced.</p><p>The Parts department, on the basis of the
+car&#x27;s data (chassis no.), will supply the new Body Computer with
+the protection codes already memorised.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>COMPOSITION</h3><p>The aerial assembly consists
+of a toroidal reel aerial with built-in connector on the aerial
+body.</p><p>The connecting wiring to the BCN is integrated
+in the dashboard wiring loom.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>OPERATING</h3><p>The aerial is supplied by the
+BCN to energise the key&#x27;s transponder.</p><p>As the aerial needs to be as close as possible
+to the transponder (for electromagnetic immunity, its small size
+and the limited range of the transponder), it is attached axially
+to the ignition switch.</p><figure class="photo"><img class="zoomable" src="../../../media/2043212.jpg" alt="" loading="lazy"></figure><p>1 - CODE aerial
+	2 - Ignition switch</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>OPERATING</h3><p>The mechanical key contains a
+cryptographic transponder in the handle.</p><p>When the key is inserted in the switch and
+the ignition is switched on (+15), the transponder is energized
+by the aerial and responds by emitting the secret code in a variable
+and encrypted way.</p><p>The emission into the air has sufficient
+power to have high immunity to electromagnetic interference and
+a range such that it is received by the aerial mounted in the ignition
+switch.</p><p>If the code is recognised as valid, the
+LANCIA CODE sends the engine control unit, at the request of the
+latter, a coded signal that allows the engine to be started.</p><p>Up to 8 keys can be programmed in the LANCIA
+CODE.</p><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The keys are supplied &#x27;already
+programmed&#x27; by the production factory. All the codes are then stored
+in a DATA BASE managed by the PARTS DIVISION. Therefore, when a
+new vehicle is handed over to a customer, the Service Network should
+not carry out any programming procedures. If a key is mislaid or
+additional keys are requested, this request should be passed on
+to the Parts Dept.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>KEY TRANSPONDER</h3><p>The transponder contained in the key has the following coded in its memory:</p><ul><li>SECRET CODE, the same for each transponder in the same
+key kit;</li><li>IDENTIFIER, different for each transponder produced;</li><li>DATE OF PROGRAMMING the secret code</li></ul><p>The identifier differs from transponder
+to transponder to ensure that, even if duplicates are requested
+on the Network, there are not several transponders with the same
+identifier.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>supply of spare keys</h3><p>Keys may only be supplied by
+the Parts Dept.</p><p>With the chassis number of the car, the
+Parts Dept. can make copies of the keys with the relevant codes
+(identifier and secret).</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Reprogramming the keys</h3><p>Reprogramming the keys enables
+the keys authorised to start the car to be memorised in the BCN.</p><p>The new keys to be programmed and those
+already programmed will be inserted in the ignition switch to be
+recognised by the LANCIA CODE which will memorise in the table of
+enabled identifiers those presented during the procedure, and will transfer
+from the latter table to the table of disabled identifiers those
+identifiers which have not been presented.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Table of disabled keys</h3><p>If an enabled key is no longer
+available (lost, stolen or no longer working), the subsequent key
+programming procedure (for example necessary for memorising the
+new replacement key) should disable its operation.</p><p>The LANCIA CODE therefore manages a table
+in EEPROM which can contain the data relating to 16 disabled keys:
+the identifiers of the enabled keys not presented during the reprogramming
+procedures are transferred into this table.</p><p>If the disabled keys table is full, any
+new key will replace the first key entered on the table.</p><p>This table also permits traceability of
+the keys used on the car.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Key reprogramming prodecure</h3><p>The key reprogramming procedure
+is carried out/guided by the Diagnostic/Test Instrument: this procedure
+is activated by access protected by the car&#x27;s PIN.</p><p>Once the procedure is activated, the flow is as follows:</p><ul><li>the diagnostic instrument instructs the NBC to initialize
+the key learning procedure.</li><li>the operator enters the first key and requests learning
+from the BCN: the BCN reads the transponder after Key-on, verifies
+whether the secret code is correct and, if it is, learns the key&#x27;s
+identifier.</li><li>the operator repeats the previous operation for all
+the car keys.</li><li>once all the keys have been learnt, the diagnostic instrument
+instructs the BCN to memorise them permanently in EEPROM, in accordance
+with the following procedure:</li><li>the BCN compares the learnt identifiers with those currently
+in memory</li><li>the data of the keys memorised in EEPROM but not presented
+during learning, they are moved to the disabled keys table.</li><li>the data of the learnt keys are memorised in the enabled
+keys table only if they are not already present in the disabled keys
+table.</li></ul><p>Up to a maximum of 8 enabled keys can be
+programmed.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DELETION FROM MEMORY OF A LOST KEY</h3><p>The procedure is the same as
+that described in the previous paragraph. All the keys owned must
+be presented; those not presented will be deleted, i.e. transferred
+into the table of disabled identifiers. A lost key may be deleted
+from memory at any time by a diagnostic/test instrument. The identifier
+of that key is transferred into the disabled keys table and will
+no longer be recognised.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>COMPOSITION</h3><p>This card contains the following:</p><ul><li>The emergency code (electronic code) which allows the
+car to be started with the EXAMINER or another diagnostic instrument
+or, in an emergency, with the accelerator pedal procedure. It is
+also used to programme the keys and remote controls with the EXAMINER.</li><li>The mechanical code of the keys (mechanical code) identifies
+the mechanical profile of the key, and must be specified in the
+order to receive the key already cut.</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2043213.jpg" alt="" loading="lazy"></figure><p>1 - Electronic code
+	2 - Mechanical code</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>OPERATION</h3><p>The emergency electronic code
+is also used for the system fault diagnosis and for other operations
+using the Examiner or other diagnostic equipment. Many of these
+operations (e.g. &#x27;Programming Keys&#x27;) can only be carried out after
+this code has been entered.</p><p>Therefore before any operation, the Customer
+must be asked for the Code Card.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The Code Card should not be left
+in the vehicle in case it is stolen: it should, however, be available
+for the emergency starting procedure described below.</p></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SPECIFICATIONS</h3><p>The code warning light is located
+on the instrument panel; it is controlled by a message on the B-CAN
+network by the NBC.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Method of operation and flashing times of CODE warning
+light</h3><p>The NBC gives the instruction
+to the panel, via the CAN network, to switch on the LANCIA CODE
+warning light as shown in the &#x27;code warning light blinking modes&#x27;
+table, where the times are considered with a tolerance of ± 10%.</p><p>In accordance with the blinking modes (from
+1 to 16) identified in the top table, the code warning light should
+flash as shown in the following table.</p><figure class="photo"><img class="zoomable" src="../../../media/2052302.jpg" alt="" loading="lazy"></figure><p>1 - Virgin BCN, virgin ECN, C-CAN line and W line connected,
+transponder recognised, starting permitted
+	2 - Virgin BCN, virgin ECN, C-CAN line and W line connected,
+transponder not recognised, starting not permitted
+	3 - Virgin BCN, virgin ECN, C-CAN line not connected and W line
+not connected, transponder recognised, starting not permitted
+	4 - Virgin BCN, virgin ECN, C-CAN line not connected and W line
+not connected, transponder not recognised, starting not permitted
+	5 - Virgin BCN, memorised ECN, C-CAN line connected and W line
+connected, transponder recognised, starting not permitted
+	6 - Virgin BCN, memorised ECN, C-CAN line connected and W line
+connected, transponder not recognised, starting not permitted
+	7 - Virgin BCN, memorised ECN, C-CAN line not connected and W
+line not connected, transponder recognised, starting not permitted
+	8 - Virgin BCN, memorised ECN, C-CAN line not connected and W
+line not connected, transponder not recognised, starting not permitted
+	9 - Memorised BCN, virgin ECN, C-CAN line connected and W line
+connected, transponder recognised, starting permitted
+	10 - BCN memorised, virgin ECN, C-CAN line connected and W line
+connected, transponder not recognised, starting not permitted
+	11 - BCN memorised, virgin ECN, C-CAN line not connected and
+W line not connected, transponder recognised, starting not permitted
+	12 - BCN memorised, virgin ECN, C-CAN line not connected and
+W line not connected, transponder not recognised, starting not permitted
+	13 - BCN memorised, ECN memorised, C-CAN line connected and W
+line connected, transponder recognised, starting permitted
+	14 - BCN memorised, ECN memorised, C-CAN line connected and W
+line connected, transponder not recognised, starting not permitted
+	15 - BCN memorised, ECN memorised, C-CAN line not connected and
+W line not connected, transponder recognised, starting not permitted
+	16 - BCN memorised, ECN memorised, C-CAN line not connected and
+W line not connected, transponder not recognised, starting not permitted
+	17 - The receipt, by the NBC in VERIFY mode, of a delayed key
+code following a code request made after 500 ms by Key ON and which
+caused the code warning light to come on permanently, should cause
+the light to go out immediately, indicating that the system is connected correctly
+and working, and the car is protected.
+	18 - Particular blinking modes of the light are not required when
+the BCN is in the &#x27;Diagnosis&#x27; state</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>FAULT DIAGNOSIS</h2><p>The LANCIA CODE function permits
+the possibility of carrying out self-diagnosis of the parts which
+make up the system.</p><p>The NBC can identify and memorise in EEPROM
+the presence of the following malfunctions:</p><p>Transponder:</p><ul><li>faulty or absent or with incorrect secret code</li><li>deleted/disabled</li><li>unknown/not memorised</li></ul><p>Transponder aerial:</p><ul><li>faulty electrical connection (open circuit, short circuit
+to earth or to battery)</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>RECOVERY PROCEDURE BY ACCELERATOR PEDAL</h3><p>Whenever the customer wishes
+to start the engine and has problems with the LANCIA CODE, the following
+procedure should be activated.</p><p>The Recovery procedure is an emergency procedure
+which allows the customer to regain possession of the car if he
+has lost a key or if the key is damaged. By &#x27;manual&#x27; entry of a
+sub-code (EMERGENCY CODE).</p><p>The RECOVERY PROCEDURE can only be activated
+after the NCM has entered the &#x27;ENGINE IMMOBILIZED&#x27; state.</p><p>The RECOVERY PROCEDURE by accelerator pedal
+can be repeated a limitless number of times;</p><p>The RECOVERY PROCEDURE by accelerator pedal
+must be carried out fully (5 digits); there will be no message if
+one or more digits of the entered code are incorrect; the only way
+to check whether the code is correct is to complete the procedure
+and try to start the engine; the procedure can nevertheless be interrupted
+by KEY OFF.</p><p>If the accelerator pedal is released before
+a time-out (8 s the first time, 4 s the other times), the CHECK
+ENGINE warning light will not go out and the RECOVERY PROCEDURE
+will be aborted.</p><p>To start the recovery procedure, the user must carry out the following operations in order:</p><ul><li>Read the code on the CODE CARD.</li><li>Turn the key to ON. The diagnosis warning light comes
+on for the self-test;</li><li>Press and hold down the accelerator pedal. The diagnosis
+warning light goes out after 8 s.</li><li>When the diagnosis light goes out, release the accelerator
+pedal.</li><li>After the pedal has been released, the warning light
+will flash at a frequency of 0.8 Hz duty cycle 25% ON. When the warning
+light has come on a number of times equal to the first digit of
+the code, press and hold down the accelerator pedal to allow the
+ECN to recognise it. The diagnosis light will come on and stay on,
+fixed, for 4 s.</li><li>When the diagnosis light goes out, release the accelerator
+pedal.</li><li>After the pedal has been released, the warning light
+will flash at a frequency of 0.8 Hz duty cycle 25% ON. When the warning
+light has come on a number of times equal to the next digit in the
+code, press and hold down the accelerator pedal to allot the ECN
+to recognise it. The diagnosis light will come on and stay on, fixed,
+for 4 s.</li><li>When the diagnosis light goes out, release the accelerator
+pedal.</li><li>Repeat these operations for all the other figures.</li><li>After the pedal has been released, when the last digit
+has been recognised, the warning light will flash at a frequency
+of 1.6 Hz duty cycle 25% for 4 s, or will go out sooner, if engine
+starting is recognised (&gt;450 rpm) indicating that the code has
+been accepted, or will come on fixed to indicate that the code has
+been rejected. If the code is accepted, start the engine. If the
+code is rejected, repeat the procedure from the beginning. For NCMsl
+which measure time, engine starting is permitted within 10 minutes
+without repeating the procedure.</li></ul><p>The example of entering a code (42173) is
+illustrated in the diagram.</p><figure class="photo"><img class="zoomable" src="../../../media/2043215.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>Protection system</h2><p>The Vehicle Protection System
+makes it possible to combine the best features for protecting against
+a break in with comfortable usage.</p><p>The system can be operated, using the remote
+control (with 3 buttons and a rectractable metal insert), at a range
+of up to 20m away from the vehicle.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>Central locking</h2><p>On some trim levels (Oro and
+Keyless-Go option), the central locking system includes a dead lock,
+the independent unlocking of the driver&#x27;s door and superopening/superlocking
+functions, whilst all trim levels include a series of protective functions
+(indepdent boot unlocking, automatic locking of the doors at speed)
+which can be personalized by the user through the menu on the instrument
+panel.</p><p>The mechanical key can be extracted.</p><figure class="photo"><img class="zoomable" src="../../../media/2043216.jpg" alt="" loading="lazy"></figure><p>A - Key closed
+	B - Key extracted
+	1 - Key extraction button</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>Central locking</h2><p>The catch in the driver&#x27;s door
+makes it possible to lock and unlock the door using the mechanical
+key.</p><p>The vehicle is fitted as standard with a
+remote control and there are no mechanical safety knobs on the doors.</p><p>The boot can be opened through the electric,
+soft touch type handle acting on an electrical contact.</p><p>There is a panel on the vehicle tunnel with
+2 buttons which operate the central locking and unlocking of the
+locks.</p><p>A red led on the driver&#x27;s door pane indicates
+door lock system actions or status.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CENTRAL LOCK LOCK/RELEASE FROM OUTSIDE</h3><p>The door locks can be centrally
+locked or unlocked either by inserting the mechanical key in the
+driver&#x27;s door catch or by using the remote control buttons.</p><p>The locking is confirmed by the LED in the
+driver&#x27;s door.</p><p>If the vehicle is locked from the outside,
+the door central locking and unlocking buttons and the boot release
+located in the passenger compartment are disabled and then re-enabled
+the next time the vehicle is unlocked.</p><p>If the key is turned to lock the vehicle
+when one of the front doors is open, the lock for that door does
+not mechanically perform the manoeuvre and it is therefore not possible
+to lock the door. A signal is given by the rapid flashing of the
+direction indicators and the LED in the door panel.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CENTRAL LOCKING LOCK AND RELEASE FROM INSIDE</h3><p>The locks are unlocked from inside
+the vehicle through the operation of one of the two door opening
+levers located on the doors or by using the central locking/unlocking
+buttons located on the panel on the centre tunnel, near the gear
+lever.</p><p>By pressing the locking button, if the locks
+are unlocked, all the locks are then locked (including the boot),
+conversely, if the locks are already locked, pressing the unlocking
+button unlocks all the locks (see the appropriate section for unlocking the
+boot).</p><figure class="photo"><img class="zoomable" src="../../../media/2043217.jpg" alt="" loading="lazy"></figure><p>1 - Door locking button
+	2 - Door unlocking button</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Independent driver&#x27;s door unlocking (only for HIGH
+versions)</h3><p>It is possible, using the instrument panel, to set the behaviour of the central locking system when the unlocking of the locks takes place through the driver&#x27;s door:</p><ul><li>central unlocking (default): using the opening button
+on the remote control or by turning the key, all the vehicle doors are
+unlocked at the same time and access is allowed through any door.</li><li>unlocking the driver&#x27;s door: using the opening button
+on the remote control or when the key is turned, only the driver&#x27;s door
+is unlocked, whilst the other doors and the boot remain locked,
+preventing acess by non authorized persons.</li></ul><p>When setting the unlocking of the driver&#x27;s
+door it is also possible to unlock the other doors by pressing the
+button on the remote control again or by turning the key a second
+time within 1 second of unlocking the driver&#x27;s door.</p><p>It is therefore always possible to press
+the central unlocking button.</p><p>If, after having unlocked the doors, none
+of the doors or the boot is opened within 30 seconds (presuming
+the driver has gone away from the vehicle), it is automatically
+re-locked.</p><p>If the dead-lock was engaged before the
+unlocking, then it is not automatically re-engaged.</p><p>If any of the door handles is pulled, the
+lock for that door only is unlocked (release incorporated in the
+safety device) and the door is opened: if the other doors were locked,
+they remain so.</p><p>It is not possible to unlock the lock only
+because there are no safety knobs: the central locking/unlocking
+button must be used for this operation.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DEAD LOCK MODE (only for HIGH version)</h3><p>The lock is fitted with a dead-lock
+function which makes it possible to place all the lock external
+linkage in neutral (with the exception of the key catch to allow
+for mechanical backup) thereby counteracting any break in attempts
+designed to move the lock and release the safety device. The dead-lock
+places the interior handle and the mechanical safety engagement
+device in neutral.</p><p>The dead-lock function is engaged by pressing
+the door locking button on the remote control twice or using the
+mechanical key when the doors are locked, turning the key a second
+time within 1 second of the locking manoeuvre. The engagement of
+the dead-lock is therefore a voluntary action. The engagement/disengagement
+of the dead-lock function is signalled: this takes place via the
+red LED in the driver&#x27;s door panel (see signalling LED). If one
+of the vehicle doors is not properly shut, the dead-lock is not
+engaged: this prevents someone from being able to enter the vehicle
+when the door is open and then remaining locked inside once the
+door is closed.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>Dead lock deactivation mode</h3><p>The function is automatically
+deactivated for all the doors when the locks are unlocked (even
+when only the driver&#x27;s door is unlocked.</p><p>The dead-lock function inhibits the door
+locking and unlocking buttons in the passenger compartment.</p><p>It is impossible to get out of the passenger
+compartment once the dead-lock function has been applied.</p><aside class="note"><img class="icon" src="../../../media/768.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000166.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the battery is run down / not
+working properly or disconnected, the dead-lock function can only
+be deactivated for doors fitted with catches, using the mechanical
+key from the outside;</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SIGNALLING LED</h3><p>If the dead-lock function is
+present, there is a RED signalling LED in the driver&#x27;s door panel.</p><figure class="photo"><img class="zoomable" src="../../../media/2052303.jpg" alt="" loading="lazy"></figure><p>1 - Led</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>SIGNALLING LED</h3><p>The LED gives out the following signals:</p><ul><li>locking of the locks: the LED lights up for 3 seconds.
+If, when the locks are locked, some of the doors or the boot is
+not properly shut, then the LED will flash rapidly for 3 seconds;</li><li>dead-lock engagement: after the dead-lock has been engaged,
+the LED will flash twice for 0.5 seconds and then move on to the
+deterrent signal.</li><li>deterrent: once the signal that the doors are locked
+is over, the LED will flash rapidly to indicate that the vehicle
+is locked (deterrent function): the flashing ends the next time
+the locks are unlocked.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>UNLOCKING AND OPENING THE BOOT</h3><p>The boot which is fitted with
+an electric lock and an electric handle, works like a 3rd door;
+it is automatically centrally unlocked when the doors are unlocked,
+with the electric handle enabled to open the boot when it is operated:
+in this way the lock releases the boot and allows it to be raised.</p><p>If the &#x27;unlock driver&#x27;s door&#x27; has been requested,
+the boot will not be unlocked.</p><p>It is also possible to open it independently
+by pressing the special button in the remote control.</p><p>Even if the &#x27;Independent Boot&#x27; option is
+activated, the boot is not unlocked; in this case, the only way
+to unlock it is to press the boot opening button on the remote control.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>UNLOCKING THE BOOT INDEPENDENTLY</h3><p>The behaviour of the boot can be set in the following 2 different ways:</p><ul><li>Boot subject to the central locking (default setting):
+the status of the boot follows the status of the doors. With the
+vehicle locked the boot is locked, with the vehicle unlocked the
+boot is unlocked.</li><li>Boot indepedent: the boot is always locked and can only
+be opened using the mechanical key and the boot catch.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>WINDOW AND ROOF LOCKING (only for HIGH version)</h3><p>It is possible to close the windows
+in all the doors and the sun roof when the doors are closed by keeping
+the key rotated in the closed position.</p><p>The windows continue to move as long as
+the key is rotated.</p><p>In the same way it is possible to open the
+windows and the sun roof by keeping the key rotated in the closed
+position.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DOOR LOCK WITH VEHICLE SPEED</h3><p>The function which automatically
+locks the doors and the boot when the vehicle speed exceeds 20 Km/h
+can be activated using the instrument panel.  The doors and the
+boot remain locked when the speed goes below 20 Km/h, preventing
+access by non authorized persons. The function is not activated
+in default.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DOOR RELEASE FROM INERTIA SWITCH</h3><p>Inertia switch status is acquired
+directly from the NBC therefore the NBC commands the unlocking of
+all the doors even if only that of the driver&#x27;s door has been set
+according to the central locking strategy described previously.</p><p>The inertia switch only unlocks the boot
+only if the boot is subject to the doors.</p><p>If the boot is set at &#x27;always locked&#x27; then
+the inertia switch does not operate the boot.</p><p>The NBC, for a second time, repeats the
+command to unlock the locks 1 sec. after the command sent previously.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>INHIBITION DUE TO A HIGH NUMBER OF MANOEUVRES</h3><p>If 10 locking / unlocking manoeuvres
+are carried out within 25 seconds then the NBC inhibits the locking
+/ unlocking commands for 30 seconds.</p><p>As a result, the last manoeuvre, before
+the inhbition, can be an unlocking or a locking one.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>DOORS / BOOT / BONNET LID OPEN ACOUSTIC SIGNAL</h3><p>The inertia switch acquires the
+door, boot and bonnet lid signal (only if the alarm is fitted) and
+the vehicle speed signal from the B - CAN network.</p><p>If one of the doors or the boot or bonnet
+lid is open and the speed is above 4 Km/h then an acoustic signal
+is emitted.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>REMOTE CONTROL UNIT</h3><p>The radiofrequency remote control
+ is equipped with a retractable metal insert and a signalling LED.
+It has an operating radius of twenty metres.</p><p>It is used in conjunction with the central
+locking system and has three buttons with the following functions:</p><p>Opening button:</p><ul><li>Pressing once briefly: unlocks the driver&#x27;s door + relevant
+dead-lock + switching off alarm (if fitted) + switching on dimmed
+courtesy light through radio control with two confirmation blinks
+and auditory warning;</li><li>Pressing twice briefly: unlocks all the doors + switches
+on courtesy light + dead-lock;</li><li>Long press (more than 2 seconds): superopening of windows
++ sun roof (if fitted) + dimmed switching on of courtesy lights,
+when the button is released the openings stop in the current position.</li></ul><p>Closing button:</p><ul><li>Pressing once briefly: locking of doors + boot + switching
+on of alarm (if fitted) + dimmed switching off of courtesy light
+with confirmation blink</li><li>Pressing twice briefly: engagement of dead-lock;</li><li>Long press (more than 2 seconds): superclosing of sun
+roof (if fitted) + windows and dimmed switching off of courtesy lights,
+when the button is released the closings stop in the current position;</li></ul><p>Boot button:</p><ul><li>Pressing once briefly: unlocking of boot + switching
+off of alarm (if fitted)</li><li>Long press (more than 2 seconds): unlocking of boot
++ switching off of alarm (if fitted) + raising of boot.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>FUEL FLAP</h3><p>The fuel flap is managed directly
+by the NPG and is therefore linked to the locked / unlocked state
+of the driver&#x27;s door.</p><p>The fuel flap is unlocked by:</p><ul><li>central locking / unlocking command at the driver&#x27;s
+door, via the catch, by means of remote control</li><li>When the driver&#x27;s door is opened if this door has been
+&#x27;locked&#x27;. Therefore when the driver&#x27;s door is opened the door open switch
+signals the opening to the NBC which supplies this information to
+the B - CAN network; the NPG reads the change in status from the
+network from door closed to open and energizes the central locking
+motor to also unlock the fuel flap.</li></ul></section>
+
+<h2>Topics that link to this page (2)</h2><ul><li><a href="2427442.html">5505A multi-function components</a> <span class="meta">system description · all engines; all production periods</span></li><li><a href="2428115.html">E7010 CODE - Description</a> <span class="meta">system description · all engines; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

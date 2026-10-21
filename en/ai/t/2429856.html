@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods. Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5505 ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS &gt; Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427361.html">Descriptions</a> › <a href="2427440.html">55 ELECTRICAL EQUIPMENT</a> › <a href="2427441.html">5505 ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</a> › <span>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</span></nav>
+<h1>Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Descriptions &gt; 55 ELECTRICAL EQUIPMENT &gt; 5505 ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS &gt; Introduction - ELECTRICAL CIRCUIT FOR INSTRUMENTS/INDICATORS</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429856">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429856</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>GENERAL CHARACTERISTICS</h2><p>In conventional electrical systems,
+functions are activated with the aid of dedicated point-to-point
+connections.</p><p>As the number of eletrical/electronic devices
+on board new vehicles has increased, the connection are becoming
+more complex and heavy. One reason for this is the complexity of
+functions implemented in the many electronic units, which require
+a continual interchange of data. All this makes it more difficult
+to install new electrical systems and increases the complexity of
+fault diagnosis.</p><p>Many problems have been resolved and new
+electrical systems have been optimised compared to conventional
+systems by means of networking. This provides a more effective means
+of managing communication on board the car and for the transfer
+of information between subsystems via the serial buses present:
+single wires, pairs of twisted wires or even optical fibres. We
+shall now see how the move from conventional systems to those known
+as multiplexing has taken place.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CLASSIC SOLUTION</h3><p>The four control units in the
+diagram below require a number (N) of wires for each input/output
+in order to perform their function. This has created so much wiring
+that the system is more complex (design and manufacture), more bulky
+(weight, bulk and cost) and requires some 40 kg of wiring harnesses
+amounting to a length of more than 2 km. This requirement is likely
+to double every 10 years because even now one such vehicle may be
+equipped with 20 to 40 control units (ECUs).</p><figure class="photo"><img class="zoomable" src="../../../media/2052273.jpg" alt="" loading="lazy"></figure><p>1 - Climate control node
+	2 - Engine management node
+	3 - Engine temperature sensor (for engine management node)
+	4 - Instrument panel node
+	5 - Engine temperature sensor (for instrument panel warning light)
+	6 - Engine cooling fan
+	7 - Engine temperature bulb</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>CLASSIC SOLUTION</h3><p>The first step that allowed us
+to reduce the volume and the complexity of the wiring harnesses
+was to group several electronic functions in a single unit: FEWER
+COMPONENTS = FEWER WIRES.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>EXAMPLES OF INTEGRATION</h3><p>The multi-function control unit
+manages: central locking, electric windows, courtesy light timer,
+heated rear windscreen timer and heated, exterior rear view mirrors.</p><figure class="photo"><img class="zoomable" src="../../../media/2043148.jpg" alt="" loading="lazy"></figure><p>1 - Multifunction control unit
+	2 - Central locking
+	3 - Electric window control unit
+	4 - Centre courtesy light
+	5 - Rear courtesy light
+	6 - Heated rear windscreen / heated door mirrors</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>EXAMPLES OF INTEGRATION</h3><p>The integration of electrical/electronic functions in a single unit has allowed us to improve:</p><ul><li>the management of current consumption</li><li>the functionality of appliances because they are managed
+by a single control unit;</li><li>the fault diagnosis using control unit self-diagnosis</li></ul><p>This first stage has allowed us to reduce
+the number of electronic units but not to reduce the volume of wiring
+harnesses sufficiently.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>MULTIPLEXING SOLUTION</h3><p>This solution has made it possible
+to reduce the volume of cable looms and to considerably improve
+the transmission of information between the various electronic units.</p><p>These transmissions take place through a
+BUS channel consisting of 2 cables (the main one already used for
+the telephone, radio, television network etc.)</p><figure class="photo"><img class="zoomable" src="../../../media/2043149.jpg" alt="" loading="lazy"></figure><p>A - B - C: NODES (CONTROL UNITS)
+	D: MASTER CONTROL UNIT OR BODY COMPUTER
+	A1 - A2, B1 - B2, C1 - C2: COMMUNICATION BUS</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>MULTIPLEXING SOLUTION</h3><p>In addition to simplifying the
+wiring and improving communication between the electronic units,
+the multiplexing solution also makes it possible to reduce the number
+of sensors (INFORMATION SHARING)</p><figure class="photo"><img class="zoomable" src="../../../media/2052274.jpg" alt="" loading="lazy"></figure><p>A - Classic solution
+	B - Multiplexing solution
+	1 - Climate control node
+	2 - Engine management node
+	3 - Engine temperature sensor (for engine management node)
+	4 - Instrument panel node
+	5 - Engine temperature sensor (for instrument panel warning light)
+	6 - Engine cooling fan
+	7 - Engine temperature bulb
+	8 - Instrument panel node
+	9 - Climate control node
+	10 - Engine temperature information
+	11 - Body Computer node
+	12 - Engine management node
+	13 - Engine temperature sensor (for engine management node)</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>MULTIPLEXING SOLUTION</h3><p>In general, in order to send data via multiplexing, we need to define the following:</p><ul><li>(A) THE TRANSMISSION CHANNEL (electric cables, optical
+fibres, radio waves, etc.)</li><li>(B) THE TYPE OF SIGNAL (voltage, current, light, etc.)</li><li>(B) THE COMMUNICATION PROTOCOL (all the rules that allow
+management of analogue or digital transmission management,  code
+type, address, transmission order, error recording etc.).</li></ul><p>On this model, the transmission channel
+(A) is a pair of electrical wires known as a BUS.</p><p>The type of signal (B) is VOLTAGE and the
+communication protocol (C) is the CAN (Controller Area Network)
+developed by BOSCH.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>F.L.ORE.N.C.E STRUCTURE</h2><p>The MINI F.L.ORE.N.C.E systemhas
+been designed for the optimum management of the vehicle&#x27;s electrical
+and electronic functions.</p><p>The system interacts with all the electrical
+system functions, directly cotnrolling the so-called bodywork functions
+(visibility, access, on board information, comfort, telematics,
+etc.) and supporting the exchange of data between the traction control
+systems (engine, braking, gearbox, etc.).</p><p>For excellent performance each control unit
+(electronic or electro-mechanical) is located in a central position
+in relation to the functions which it manages. This allows minimisation
+of the power and signal distribution system through the extensive use
+of serial communication networks, with advantages when solving the
+problems of size, reliability, weight and cost.</p><p>The distribution of power takes place via
+the junction units and/or fuse boxes, connected to the control elements
+(relays and static actuators) in order to ensure the maximum level
+of electrical protection and the minimum degree of wiring complexity .</p><p>The MINI FLORENCE system offers countless advantages such as, for example:</p><ul><li>the sensors in the various subsystems are made available
+to the network in order to be shared eliminating the presence of
+similar sensors</li><li>new functions can only be added by modifying the software
+(developed during the vehicle life),</li><li>wiring design is simplified and the number of connectors
+is reduced,</li><li>electronic device operating safety is increased to improve
+the reliability of information transmited,</li><li>an integrated diagnostic function simplifies service
+operations on electric/electronic components.</li></ul><p>The system structure on this vehicle comprises:</p><ul><li>2 CAN communication NETWORKS which connect NODES belonging
+to two different areas: one for the dynamic control of the vehicle
+and one for the so-called &#x27;bodywork&#x27; functions.</li><li>a serial line for immobiliser recovery</li><li>Different K SERIAL LINES for the fault diagnosis of
+several NODES / CONTROL UNITS</li><li>an A-BUS serial line</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>NODES refer to all the electrical
+/ electronic devices and control units which contain a specific
+interface (NETWORK INTERFACE) which makes it possible to transmit
+and receive data, information and signals which travel through CAN
+networks.</p></aside><p>Below is a table containing all the elements
+(nodes/control units/devices) which make up the mini FLORENCE structure
+for the most comprehensive configuration.</p><p>Mini FLORENCE system components</p><div class="table"><table><tr><th><p>CAB</p></th><th colspan="1"><p>Air bag control unit</p></th></tr><tr><td><p>CDC</p></td><td colspan="1"><p>CD-Changer</p></td></tr><tr><td><p>CPL</p></td><td colspan="1"><p>Dashboard Control Unit</p></td></tr><tr><td><p>CSP</p></td><td colspan="1"><p>Rain/Dusk Sensor Control Unit</p></td></tr><tr><td><p>CVM</p></td><td colspan="1"><p>Engine Compartment Control Unit</p></td></tr><tr><td><p>CVS</p></td><td colspan="1"><p>Clock Spring Cable</p></td></tr><tr><td><p>DSP</p></td><td colspan="1"><p>Audio Hi-Fi Amplifier</p></td></tr><tr><td><p>NBC</p></td><td colspan="1"><p>Body Computer node</p></td></tr><tr><td><p>NCR</p></td><td colspan="1"><p>Robotized Gearbox Node</p></td></tr><tr><td><p>NCL</p></td><td colspan="1"><p>Climate Control Node</p></td></tr><tr><td><p>NCM</p></td><td colspan="1"><p>Engine Control Node</p></td></tr><tr><td><p>NFR</p></td><td colspan="1"><p>Braking System Node</p></td></tr><tr><td><p>NGE</p></td><td colspan="1"><p>Electrical steering node</p></td></tr><tr><td><p>NIT</p></td><td colspan="1"><p>Telematic Info Connector</p></td></tr><tr><td><p>NPG</p></td><td colspan="1"><p>Driver&#x27;s Door Node</p></td></tr><tr><td><p>NPP</p></td><td colspan="1"><p>Passenger Door Node</p></td></tr><tr><td><p>NQS</p></td><td colspan="1"><p>Instrument panel node</p></td></tr><tr><td><p>NRR</p></td><td colspan="1"><p>Radio Receiver Node</p></td></tr><tr><td><p>CPA</p></td><td colspan="1"><p>Parking Sensor Node</p></td></tr><tr><td><p>NYL</p></td><td colspan="1"><p>Lateral Yaw Node (yaw sensor)</p></td></tr><tr><td><p>DEV</p></td><td colspan="1"><p>Steering column switch unit</p></td></tr></table></div><p>The two C-CAN and B-CAN networks are physically separate from one another, but both meet at the BODY COMPUTER NODE; the latter, which is considered the MASTER node for the two networks, contains a GATEWAY function which allows the transfer of information/dat from one network to the other, even if the two networks are operating at different speeds:</p><ul><li>B-CAN NETWORK transmission speed = 50 Kbit/sec.</li><li>C-CAN NETWORK transmission speed = 500 Kbit/sec.</li></ul><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The fault diagnosis of the NODES
+connected to the B-CAN network is achieved via the CAN, whilst for
+those connected to the C-CAN require the specific K SERIAL LINES.
+The K lines and the B-CAN network meet in the connector for the
+EOBD fault diagnosis on the BODY COMPUTER.</p></aside><p>Below is a diagram summarizing the structure
+of the mini F.L.Ore.N.C.E. system.&#x27;.</p><figure class="photo"><img class="zoomable" src="../../../media/2052275.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>F.L.ORE.N.C.E STRUCTURE</h2><p>Refer to the previous table for
+a description of the nodes.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>B - CAN NETWORK CONNECTION</h3><p>The B - CAN network (low speed)
+consists of 2 electrical cables, one White/Pink shown in the wiring
+diagram as a CAN - A cable and one Black/Pink one shown in the wiring
+diagram as a CAN - B cable.</p><p>The transmission of information through
+this pair of cables takes place through the transmission of 2 voltage
+levels (V), one High and one Low associated with the CAN - A cable
+and the CAN - B cables, respectively. the mathematical difference between
+these two levels produces two voltage values associated with two
+logic levels, 0 or 1.</p><p>The latter constitute the basic information
+unit known as BIT (binary digit) and, suitably combined, they make
+up the information to be transmitted.</p><figure class="photo"><img class="zoomable" src="../../../media/2043153.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>B - CAN NETWORK CONNECTION</h3><p>V Can A - V Can B = 3.6 - 1.4
+= + 2.2 V (bit 0)</p><p>V Can A - V Can B = 0.2 - 4.8 = - 4.6 V
+(bit 1)</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>C - CAN NETWORK CONNECTION</h3><p>The C - CAN network (high speed)
+on the LANCIA Y consists of two twisted electrical cables, one Green,
+shown in the wiring diagram as the CAN - H cable and one Brown,
+shown in the wiring diagram as the CAN - L cable.</p><p>The transmission of information is the same
+as that for the B - CAN network. in this case the High voltage level
+is associated with the CAN - H cable and the Low voltage level with
+the CAN - L cable.</p><p>The mathematical difference for these two
+voltage levels for the C - CAN network also gives rise to two logic
+levels, 0 and 1, but with one difference illustrated in the diagram:</p><figure class="photo"><img class="zoomable" src="../../../media/2043154.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>C - CAN NETWORK CONNECTION</h3><p>The network interface cannot communicate at all if one of the following situations arises in the C-CAN network:</p><ul><li>Break in one of the two CAN cables (H and L)</li><li>Short circuit between the two CAN cables (H and L)</li><li>Short circuit of the CAN - H cable or the CAN - L cable
+to +Vbatt.</li><li>Short circuit of the CAN - H cable of the CAN - L cable
+to earth.</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>PRIORITIES IN THE CASE OF A TRANSMISSION CONFLICT
+FOR SEVERAL NODES</h3><p>The protocol for the mini Florence
+system can deal with problems of superimposition when several nodes
+wish to issue a frame simultaneously. A node sending a lower priority
+message interrupts its transmission immediately to make way for
+the node transmitting a higher priority signal. In practice, the
+higher priority message is sent via the network without any interruption
+or delay. - The frame with the highest priority gains the possibility
+of being transmitted through the BUS; a dominant level (0) always
+overcomes a recessive level (1).</p><p>Simultaneous access of several control units
+to the network may give rise to conflict on the C-CAN line (BUS)
+the diagram shows that the engine control unit node (NCM) and the
+brake system control unit (NFR) send identical frames (data packages)
+up to point (D); from point (E) the two frames have a discordant
+bit.</p><p>Because the NFR node is simultaneously checking
+(reading) the frame as well as transmitting it, from this moment
+on as soon as the NFR node realises that the bit it wishes tot transmit
+(1) of recessive value will come up against a bit (0) of dominant
+value in the network, it immediately interrupts transmission of
+its frame (loss of arbitrage) to give way to the NCM node, which
+is transmitting a higher priority frame. It stands by until the
+NCM node has finished transmitting and the line becomes free. The
+frame transmitted along the network is from the NCM node. The NFR
+may now re-attempt to gain access to the line to send the frame
+it tried to send previously. Provided another collision does not
+occur.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>A - BUS LINE CONNECTION</h3><p>The A - BUS serial line is designed
+to guarantee the exchange of information / commands between the
+various electronic control units.</p><p>On this vehicle, these control units are:</p><ul><li>Steering column switch unit electronic module</li><li>Rain/dusk sensor</li><li>Body computer node</li></ul><p>The transmission speed for the A - BUS is
+4.8 kbit/sec.</p><p>Communication at the A - BUS takes place
+through the exchange of data packages between the different control
+units.</p><p>Each control unit connected to the A - BUS
+has its own electronic address; when one control unit has to send
+a command / information to another control unit, it must always
+enter the address of the destination control unit in the data package.</p><p>Transmission always takes place from a transmitting
+control unit to a receiving control unit (one-way).</p><p>When the data reception is complete, the
+receiving control unit should send the outcome to the transmitting
+control unit, thereby ending the data package exchange.</p><p>Unlike the CAN NETWORKS, the transmission
+priorities at the A - BUS are assigned to each control unit and
+not to the information to be transmitted, therefore the control
+unit access sequence in the case of a transmission conflict is decided
+at the design stage.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h3>LINE K CONNECTION</h3><p>In the mini F.L.Ore.N.C.E. system the K lines make it possible to carry out fault diagnosis using the diagnostic equipment for the following Nodes / Control Units:</p><ul><li>Electric steering node (NGE)</li><li>Gearbox/Robotised Gearbox (NCR)</li><li>Engine Management Node (NCM)</li><li>Brake Node (NFR)</li><li>Air Bag Control Unit (CAB)</li><li>Parking Sensor Control Unit (CPA)</li></ul></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>SPECIFICATIONS</h2><p>The BODY COMPUTER NODE manages
+some of the vehicle&#x27;s electrical system functions.</p><p>The NBC is housed under the dashboard near
+the steering column, in a central position in relation to the functions
+that it manages.</p><p>The Body Computer Node (NBC) together with
+the Dashboard Control Unit (CPL) form the DASHBOARD NODE (NPL) where
+the former (NBC) constitutes the electronic section and the latter
+(CPL) the electro-mechanical section.</p><p>The fuses and relays are fitted on the CPL,
+whilst the NBC houses the EOBD fixed connector used for the fault
+diagnosis via the K lines of the NCM, NFR, NCR and CAB.</p><p>This is connector is also prepared for the
+dialogue with the B - CAN and C - CAN networks which can be used
+for both fault diagnosis and for possible on line programming.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE GENERAL FUNCTIONS</h2><p>The NBC peforms the following functions:</p><ul><li>It receives and sends information on the B - CAN network
+(e.g.: fault diagnosis, warning lights, commands, data)</li><li>It receives and sends information on the C - CAN network</li><li>It interconnects with the dashboard, front and rear
+wiring</li><li>It allows an interface for the fault diagnosis (EOBD)</li><li>It connects to the CPL to take power supplies / signals
+and operate relays.</li></ul><p>We find the following functions:</p><ul><li>management of the courtesy lights  with timed switching
+off and dimming</li><li>management of on/off exits at relay: headlamp washer
+pump, main beam headlamps, fog lights, dipped headlamps, services,
+heated rear windscreen</li><li>on/off management of relay during right/left direction
+indicators or hazard warning lights for acoustic feedback</li><li>on/off output management directly at the loads and lights
+check function: front side lights (left and right) and rear side lights
+(left and right), front direction indicators (left and right), rear
+direction indicators (left and right), and side repeaters (left
+and right), number plate lights (left and right), brake lights (left
+and right), rear fog lamps (left and right);</li><li>management of on/off exits directly at loads: heated
+rear windscreen LED, hazard warning lights LED;</li><li>repetition of the vehicle speed signal</li><li>management of the ideogram light driver</li><li>management of the SBMT driver (load disactivation at
+key-off)</li><li>management of the recovery serial line to the engine
+management control unit (immobilizer)</li><li>management of the serial line for the tilt sensor, rain
+sensor, steering column switch unit.</li><li>master for the entire system: management of the IFRs
+at the slave nodes under direct jurisdiction and monitoring of the IFRs
+by the other master nodes, monitoring and management of protocol
+errors, timer control;</li><li>fault diagnosis of the entire system: collection of
+diagnostic information, management of the fault diagnosis using
+the EXAMINER.</li><li>immobilizer: management of the key code with possible
+engine immobilizing</li><li>acquisition of on/off signals: dipped headlamp operation,
+main beam headlamp operation, boot lock opening control, boot locking
+function, handbrake control, hazard warning lights control, left
+and right rear fog lamps control, fog lights relay feed, left direction
+indicators control, right direction indicators control, parking
+lights control, side lights control, city control, steering column
+switch unit auto control, headlamp washer control, FIS control,
+boot button, bonnet button, front brake pad wear (left and right),
+brake fluid level, reverse gear engaged;</li><li>acquisition of analogue signals: fuel level, alternator
+voltage (D+), battery voltage, brake lights fuse status recognition, centre
+courtesy light control, left and right spot lights control, brake
+lights control</li><li>acquisition of vehicle speed signal</li><li>acquisition of lock sensors from door.</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2052276.jpg" alt="" loading="lazy"></figure><p>1 - Body Computer Node (NBC)
+	2 - Dashboard Control Unit (CPL)
+	NBC+CPL = NPL</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE GENERAL FUNCTIONS</h2><p>.</p><figure class="photo"><img class="zoomable" src="../../../media/2052277.jpg" alt="" loading="lazy"></figure><p>A - Body Computer Node (NBC) front view
+	B - Body Computer Node (NBC) rear view
+	1 - Connector F
+	2 - Connector D/E
+	3 - Connector C (EOBD tester output)
+	4 - Connector A/B
+	5 - Connector G
+	6 - Connector H
+	7 - Connector I</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE NBC PIN OUT</h2><p>Connector F (20-way)</p><div class="table"><table><tr><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>relay</p></td><td colspan="1"><p>Supply for boot release gear motor</p></td></tr><tr><td><p>relay</p></td><td colspan="1"><p>Button on brake pedal status input</p></td></tr><tr><td><p>3</p></td><td colspan="1"><p>Button for switching on reversing lights
+status input</p></td></tr><tr><td><p>4</p></td><td colspan="1"><p>Not available</p></td></tr><tr><td><p>5</p></td><td colspan="1"><p>Low speed CAN line</p></td></tr><tr><td><p>6</p></td><td colspan="1"><p>Heated rear windscreen relay control output</p></td></tr><tr><td><p>7</p></td><td colspan="1"><p>Low speed CAN line</p></td></tr><tr><td><p>8</p></td><td colspan="1"><p>Dipped headlamp relay control output</p></td></tr><tr><td><p>9</p></td><td colspan="1"><p>INT from ignition switch</p></td></tr><tr><td><p>10</p></td><td colspan="1"><p>Preparation for boot lock</p></td></tr><tr><td><p>11.</p></td><td colspan="1"><p>Boot release geared motor control</p></td></tr><tr><td><p>12.</p></td><td colspan="1"><p>Parking light input</p></td></tr><tr><td><p>13</p></td><td colspan="1"><p>INT for instrument panel</p></td></tr><tr><td><p>14</p></td><td colspan="1"><p>Service relay control output</p></td></tr><tr><td><p>15</p></td><td colspan="1"><p>INT from ignition switch</p></td></tr><tr><td><p>16</p></td><td colspan="1"><p>Not available</p></td></tr><tr><td><p>17</p></td><td colspan="1"><p>Supply for front rear courtesy light, climate
+control, tester output</p></td></tr><tr><td><p>18</p></td><td colspan="1"><p>Power supply for Body Computer</p></td></tr><tr><td><p>19</p></td><td colspan="1"><p>Dedicated power supply for direction indicators
+and hazard warning lights</p></td></tr><tr><td><p>20</p></td><td colspan="1"><p>Dedicated earth for release geared motor</p></td></tr></table></div><figure class="photo"><img class="zoomable" src="../../../media/2052278.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE NBC PIN OUT</h2><p>Connector D/E</p><div class="table"><table><tr><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>relay</p></td><td colspan="1"><p>Driver&#x27;s door open status input for NCR</p></td></tr><tr><td><p>relay</p></td><td colspan="1"><p>Operation of left side repeater</p></td></tr><tr><td><p>3</p></td><td colspan="1"><p>Right rear direction indicator control output
+(21W)</p></td></tr><tr><td><p>4</p></td><td colspan="1"><p>Fuel level input</p></td></tr><tr><td><p>5</p></td><td colspan="1"><p>Left rear side light control output (5W)</p></td></tr><tr><td><p>6</p></td><td colspan="1"><p>Right rear side light control output (5W)</p></td></tr><tr><td><p>7</p></td><td colspan="1"><p>A-bus serial line for CSP</p></td></tr><tr><td><p>8</p></td><td colspan="1"><p>Input signal from normally open switch signalling
+front  driver&#x27;s door open</p></td></tr><tr><td><p>9</p></td><td colspan="1"><p>Left no. plate light control output</p></td></tr><tr><td><p>10</p></td><td colspan="1"><p>Sun roof control unit output (NC)</p></td></tr><tr><td><p>11.</p></td><td colspan="1"><p>Negative signal for front passenger door
+open</p></td></tr><tr><td><p>12.</p></td><td colspan="1"><p>Left rear direction indicator control output
+(21W)</p></td></tr><tr><td><p>13</p></td><td colspan="1"><p>Operation of side direction indicators left</p></td></tr><tr><td><p>14</p></td><td colspan="1"><p>Hanbrake lever button status input</p></td></tr><tr><td><p>15</p></td><td colspan="1"><p>Fuel level input (negative)</p></td></tr><tr><td><p>16</p></td><td colspan="1"><p>Left rear door open status input</p></td></tr><tr><td><p>17</p></td><td colspan="1"><p>Inertia switch signal input</p></td></tr><tr><td><p>18</p></td><td colspan="1"><p>Serial line for CPA</p></td></tr><tr><td><p>19</p></td><td colspan="1"><p>Signal from city button</p></td></tr><tr><td><p>20</p></td><td colspan="1"><p>Right rear fog lamp control output</p></td></tr><tr><td><p>21</p></td><td colspan="1"><p>Centre courtesy light control output</p></td></tr><tr><td><p>22</p></td><td colspan="1"><p>Right brake light control output</p></td></tr><tr><td><p>23</p></td><td colspan="1"><p>Interior light control output (boot compartment)</p></td></tr><tr><td><p>24</p></td><td colspan="1"><p>Signal from boot lock catch (locking enablement)</p></td></tr><tr><td><p>25</p></td><td colspan="1"><p>Input signal from normally open switch signalling
+front  passenger side open</p></td></tr><tr><td><p>26</p></td><td colspan="1"><p>Input signal from normally open switch signalling
+right rear door open</p></td></tr><tr><td><p>27</p></td><td colspan="1"><p>Supply for front/rear courtesy light</p></td></tr><tr><td><p>28</p></td><td colspan="1"><p>Analogue input for switching on left/right
+spot light and excluding front/rear courtesy light in centre courtesy
+light</p></td></tr><tr><td><p>29</p></td><td colspan="1"><p>Positive from antitheft device (provision)</p></td></tr><tr><td><p>30</p></td><td colspan="1"><p>Left spot light control in centre front
+courtesy light</p></td></tr><tr><td><p>31</p></td><td colspan="1"><p>Left rear fog lamp control output</p></td></tr><tr><td><p>32</p></td><td colspan="1"><p>Left brake light control output</p></td></tr><tr><td><p>33</p></td><td colspan="1"><p>Passenger compartment interior ilght control
+output (NC)</p></td></tr><tr><td><p>34</p></td><td colspan="1"><p>Negative signal from switch (preparation)</p></td></tr><tr><td><p>35</p></td><td colspan="1"><p>Signal from opening switch on boot handle</p></td></tr><tr><td><p>36</p></td><td colspan="1"><p>Signal from normally open switch signalling
+boot open</p></td></tr><tr><td><p>37</p></td><td colspan="1"><p>Right spot light in centre front courtesy
+light control output</p></td></tr><tr><td><p>38</p></td><td colspan="1"><p>Right no. plate light control output</p></td></tr><tr><td><p>39</p></td><td colspan="1"><p>Aerial power supply</p></td></tr><tr><td><p>40</p></td><td colspan="1"><p>Internal serigraphy lighting control output</p></td></tr></table></div><figure class="photo"><img class="zoomable" src="../../../media/2052279.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE NBC PIN OUT</h2><p>Connector C (EOBD tester output)</p><div class="table"><table><tr><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>relay</p></td><td colspan="1"><p>Serial line K for NFR</p></td></tr><tr><td><p>relay</p></td><td colspan="1"><p>Not available</p></td></tr><tr><td><p>3</p></td><td colspan="1"><p>Serial line for Air Bag CAB</p></td></tr><tr><td><p>4</p></td><td colspan="1"><p>Power earth</p></td></tr><tr><td><p>5</p></td><td colspan="1"><p>Signal earth</p></td></tr><tr><td><p>6</p></td><td colspan="1"><p>Low speed CAN line</p></td></tr><tr><td><p>7</p></td><td colspan="1"><p>Serial line for NCM/NCR diagnosis</p></td></tr><tr><td><p>8</p></td><td colspan="1"><p>K line for immobiliser</p></td></tr><tr><td><p>9</p></td><td colspan="1"><p>Serial line for NGE</p></td></tr><tr><td><p>10</p></td><td colspan="1"><p>Not available</p></td></tr><tr><td><p>11.</p></td><td colspan="1"><p>Not available</p></td></tr><tr><td><p>12.</p></td><td colspan="1"><p>Serial line (NC)</p></td></tr><tr><td><p>13</p></td><td colspan="1"><p>Passing signal line for rear (PARK)</p></td></tr><tr><td><p>14</p></td><td colspan="1"><p>Low speed CAN line</p></td></tr><tr><td><p>15</p></td><td colspan="1"><p>Line L (NC)</p></td></tr><tr><td><p>16</p></td><td colspan="1"><p>Supply tester output</p></td></tr></table></div><figure class="photo"><img class="zoomable" src="../../../media/2052280.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE NBC PIN OUT</h2><p>Connector A/B</p><div class="table"><table><tr><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>relay</p></td><td colspan="1"><p>Button input for reversing light activation</p></td></tr><tr><td><p>relay</p></td><td colspan="1"><p>Left side direction indicator control output
+(5W) (NC)</p></td></tr><tr><td><p>3</p></td><td colspan="1"><p>Screen fitting for Immobilizer</p></td></tr><tr><td><p>4</p></td><td colspan="1"><p>Immobilizer aerial</p></td></tr><tr><td><p>5</p></td><td colspan="1"><p>Immobilizer aerial</p></td></tr><tr><td><p>6</p></td><td colspan="1"><p>Serial interface (provision)</p></td></tr><tr><td><p>7</p></td><td colspan="1"><p>Speedometer input from NFR</p></td></tr><tr><td><p>8</p></td><td colspan="1"><p>Output for fog lights relay control</p></td></tr><tr><td><p>9</p></td><td colspan="1"><p>Output for main beam headlamps control</p></td></tr><tr><td><p>10</p></td><td colspan="1"><p>Provision</p></td></tr><tr><td><p>11.</p></td><td colspan="1"><p>Provision</p></td></tr><tr><td><p>12.</p></td><td colspan="1"><p>Provision</p></td></tr><tr><td><p>13</p></td><td colspan="1"><p>Headlamp washer request wish-wash signal
+input</p></td></tr><tr><td><p>14</p></td><td colspan="1"><p>Headlamp washer relay control output</p></td></tr><tr><td><p>15</p></td><td colspan="1"><p>Speedometer input signal earth for gearbox</p></td></tr><tr><td><p>16</p></td><td colspan="1"><p>Braking node line K</p></td></tr><tr><td><p>17</p></td><td colspan="1"><p>Speedometer signal input coming from robotized
+gearbox</p></td></tr><tr><td><p>18</p></td><td colspan="1"><p>Brake system fluid level input</p></td></tr><tr><td><p>19</p></td><td colspan="1"><p>Battery recharging warning from alternator
+D+ input</p></td></tr><tr><td><p>20</p></td><td colspan="1"><p>K line for testing NCM, NCR</p></td></tr><tr><td><p>21</p></td><td colspan="1"><p>RF receiver aerial earth</p></td></tr><tr><td><p>22</p></td><td colspan="1"><p>Left side direction indicator control output
+(5W) (NC)</p></td></tr><tr><td><p>23</p></td><td colspan="1"><p>Brake pad wear state input</p></td></tr><tr><td><p>24</p></td><td colspan="1"><p>Bonnet button status input (NC)</p></td></tr><tr><td><p>25</p></td><td colspan="1"><p>A-bus serial line for DEV</p></td></tr><tr><td><p>26</p></td><td colspan="1"><p>Low speed CAN line for NCL</p></td></tr><tr><td><p>27</p></td><td colspan="1"><p>Low speed CAN line for NCL</p></td></tr><tr><td><p>28</p></td><td colspan="1"><p>Speedometer repeater output for NCRF</p></td></tr><tr><td><p>29</p></td><td colspan="1"><p>IN/OUT recovery serial for NCM in case of
+break in C-CAN line</p></td></tr><tr><td><p>30</p></td><td colspan="1"><p>Right front side light control output (5W)</p></td></tr><tr><td><p>31</p></td><td colspan="1"><p>RF receiver aerial</p></td></tr><tr><td><p>32</p></td><td colspan="1"><p>High speed CAN line</p></td></tr><tr><td><p>33</p></td><td colspan="1"><p>High speed CAN line</p></td></tr><tr><td><p>34</p></td><td colspan="1"><p>Antitheft siren power supply (NC)</p></td></tr><tr><td><p>35</p></td><td colspan="1"><p>Serial line K for CPS</p></td></tr><tr><td><p>36</p></td><td colspan="1"><p>High speed CAN line to NCM</p></td></tr><tr><td><p>37</p></td><td colspan="1"><p>High speed CAN line to NCM</p></td></tr><tr><td><p>38</p></td><td colspan="1"><p>Left front direction indicator control output
+(21W)</p></td></tr><tr><td><p>39</p></td><td colspan="1"><p>Right front direction indicator control
+output (21W)</p></td></tr><tr><td><p>40</p></td><td colspan="1"><p>Left front side light control output (5W)</p></td></tr></table></div><figure class="photo"><img class="zoomable" src="../../../media/2052281.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>BODY COMPUTER NODE NBC PIN OUT</h2><p>Connector G/H/I  (9+18+9 way)</p><div class="table"><table><tr><th><p>Pin</p></th><th colspan="1"><p>Operation</p></th></tr><tr><td><p>relay</p></td><td colspan="1"><p>Foglamp activation request input</p></td></tr><tr><td><p>relay</p></td><td colspan="1"><p>Steering column switch unit exterior lights
+auto mode activation signal</p></td></tr><tr><td><p>3</p></td><td colspan="1"><p>Dedicated power supply for direction indicators
+driver and NQS serigraphy</p></td></tr><tr><td><p>4</p></td><td colspan="1"><p>Dipped headlamps switch status input</p></td></tr><tr><td><p>5</p></td><td colspan="1"><p>Low speed CAN line from NQS</p></td></tr><tr><td><p>6</p></td><td colspan="1"><p>Low speed CAN line from NQS</p></td></tr><tr><td><p>7</p></td><td colspan="1"><p>Right parking light/direction indicators
+control input</p></td></tr><tr><td><p>8</p></td><td colspan="1"><p>Signal earth</p></td></tr><tr><td><p>9</p></td><td colspan="1"><p>Power earth</p></td></tr><tr><td><p>10</p></td><td colspan="1"><p>Power earth</p></td></tr><tr><td><p>11.</p></td><td colspan="1"><p>Serial line K for NGE</p></td></tr><tr><td><p>12.</p></td><td colspan="1"><p>Serial K line for CAB</p></td></tr><tr><td><p>13</p></td><td colspan="1"><p>Negative control for LED (provision)</p></td></tr><tr><td><p>14</p></td><td colspan="1"><p>Positive control for LED signalling anti-theft
+device on (preparation)</p></td></tr><tr><td><p>15</p></td><td colspan="1"><p>+30 SBMT (passenger compartment lights)</p></td></tr><tr><td><p>16</p></td><td colspan="1"><p>Passenger compartment interior lights control
+output</p></td></tr><tr><td><p>17</p></td><td colspan="1"><p>Parking light signal (NC)</p></td></tr><tr><td><p>18</p></td><td colspan="1"><p>Screen print lighting control output</p></td></tr><tr><td><p>19</p></td><td colspan="1"><p>Signal earth</p></td></tr><tr><td><p>20</p></td><td colspan="1"><p>Fog lamp control negative signal</p></td></tr><tr><td><p>21</p></td><td colspan="1"><p>Heated rear windscreen LED control output</p></td></tr><tr><td><p>22</p></td><td colspan="1"><p>Fog lights on LED negative control</p></td></tr><tr><td><p>23</p></td><td colspan="1"><p>Speedometer repeater output for CTA</p></td></tr><tr><td><p>24</p></td><td colspan="1"><p>Low speed CAN line for NVO, NBS (NC)</p></td></tr><tr><td><p>25</p></td><td colspan="1"><p>Low speed CAN line for NVO, NBS (NC)</p></td></tr><tr><td><p>26</p></td><td colspan="1"><p>Supply NCC climate control unit</p></td></tr><tr><td><p>27</p></td><td colspan="1"><p>INT. for CPL</p></td></tr><tr><td><p>28</p></td><td colspan="1"><p>Side lights switch status input</p></td></tr><tr><td><p>29</p></td><td colspan="1"><p>Hazard warning lights LED control output</p></td></tr><tr><td><p>30</p></td><td colspan="1"><p>Left direction indicators/parking light
+control input</p></td></tr><tr><td><p>31</p></td><td colspan="1"><p>INT for NQS</p></td></tr><tr><td><p>32</p></td><td colspan="1"><p>Heated rear windscreen button status input</p></td></tr><tr><td><p>33</p></td><td colspan="1"><p>Main beam headlamps switch status signal</p></td></tr><tr><td><p>34</p></td><td colspan="1"><p>Hazard warning lights switch status input</p></td></tr><tr><td><p>35</p></td><td colspan="1"><p>Rear fog lamp button status input</p></td></tr><tr><td><p>36</p></td><td colspan="1"><p>NQS signal earth</p></td></tr></table></div><figure class="photo"><img class="zoomable" src="../../../media/2052282.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>Some CAN nodes are programmed
+with default settings that the customer will find upon purchasing
+the vehicle.</p><p>The following nodes store such information:</p><ul><li>Body Computer</li><li>Instrument panel</li><li>Climate control unit</li></ul><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the Body Computer is replaced,
+an identical copy of the Body Computer should be ordered from parts
+as a rush delivery, giving the vehicle chassis number. This copy
+will contain all the default settings entered when the vehicle was
+new that are stored in the Parts database with the vehicle chassis
+number.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If the Instrument Panel or Climate
+Control Unit is replaced, Parts will send a blank component: once
+this is fitted: transfer intial default data to the unit and run
+the PROXY ALIGNMENT procedure using an Examiner.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside><aside class="note"><img class="icon" src="../../../media/769.jpg" alt="" loading="lazy"><div class="table"><table><tr><th><figure class="diagram"><img class="zoomable" src="../../../media/2000041.svg" alt="" loading="lazy"></figure></th><th colspan="1"><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>If other nodes are repladced,
+no initialisation procedure is necessary. Always use an Examiner
+to check that the system has not acquired errors during removal-refitting
+operations etc.</p></aside></th></tr><tr><td></td><td colspan="1"></td></tr></table></div></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>battery disconnection</h2><p>If the battery is disconnected:</p><ul><li>Body Computer,</li><li>Instrument panel</li><li>Climate Control Unit</li></ul><p>store all information received and must
+not be initialised after battery disconnection.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

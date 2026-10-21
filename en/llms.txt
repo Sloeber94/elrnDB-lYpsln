@@ -1,0 +1,28 @@
+# Lancia Ypsilon workshop manual (text version)
+
+> Official eLearn workshop manual for the Lancia Ypsilon, English. Engines: 1.2 8v, 1.2 16v, 1.4 16v, 1.3 JTD. Production periods: T.T.. Each topic is a separate HTML page with its path, applicability, and links to and from related topics.
+
+Start with the guide, then follow links. Use the lookups to jump from a component, fuse or operation code to its pages.
+
+## Start here
+- [Guide: how the manual is organised, code systems, wire colours](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/guide.html)
+- [Component index: component -> pinouts, replacement procedures, references](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/lookup/components.html)
+- [Fuse and relay index: rating, junction unit and every circuit that names it](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/lookup/fuses.html)
+- [Operation index: operation or test code -> topic](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/lookup/operations.html)
+- [All sections](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/index.html)
+
+## Sections
+- [Technical Data](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2427645.html): technical data / specifications
+- [Descriptions](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2427361.html): system description
+- [Fault diagnosis](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2427465.html): fault diagnosis table (symptom -> numbered test steps)
+- [Test](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2429780.html): test / check procedure
+- [Procedures](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2428803.html): repair procedure (removal / refitting; the operation number is the code)
+- [Electrical equipment](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/t/2427881.html): 
+
+## Background notes
+- [data-model.md](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/notes/data-model.md): wire colour codes, connector-body colours, how pinouts describe every wire, what only the diagrams add
+- [rendering-rules.md](https://sloeber94.github.io/elrnDB-lYpsln/en/ai/notes/rendering-rules.md): how the manual is structured: Removing/Refitting parts, Op. calls between procedures, variants
+
+## Optional
+- [Interactive site](https://sloeber94.github.io/elrnDB-lYpsln/en/)
+- [All models](https://sloeber94.github.io/elrnDB/llms.txt)

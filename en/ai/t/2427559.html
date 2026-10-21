@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K64 AIRBAG FAILURE WARNING LIGHT ON · Lancia Ypsilon</title>
+<meta name="description" content="fault diagnosis table (symptom -&gt; numbered test steps). all engines; all production periods. Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K64 AIRBAG FAILURE WARNING LIGHT ON">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427465.html">Fault diagnosis</a> › <a href="2427528.html">K INSTRUMENT PANEL</a> › <span>K64 AIRBAG FAILURE WARNING LIGHT ON</span></nav>
+<h1><span class="code">K64</span> AIRBAG FAILURE WARNING LIGHT ON</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K64 AIRBAG FAILURE WARNING LIGHT ON</dd>
+<dt>Kind</dt><dd>fault diagnosis table (symptom -&gt; numbered test steps)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427559">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427559</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>The brake
+fluid warning light remains on with the handbrake not applied.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The (negative) brake fluid level
+signal is sent by the special sensor  to the Body Computer Node
+which makes it available via the B-CAN network to the Instrument
+Panel Node.</p></aside><p>The Instrument Panel Node lights up the dedicated warning light
+and displays the insufficient brake fluid level message; if the
+warning light is faulty the relevant message is displayed.</p></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><div class="table"><table><tr><td></td><td></td><td colspan="3"><p>Results of the tests</p></td></tr><tr><th><p>0</p></th><th><p>PRELIMINARY CHECKS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Connect the EXAMINER diagnostic equipment and check the CAN NETWORK INFORMATION:</p><ul><li>For inactive control units</li><li>For control units with errors</li><li>For control units with CAN errors</li></ul></td><td rowspan="2"><p>Continue to Step <strong>5</strong></p></td><td><p>Presence of fault in the
+CAN</p></td><td><p>Continue
+as instructed by the tester</p></td></tr><tr><td><p>Impossible to converse with the Body Computer</p></td><td><p>Continue to Step <strong>2</strong></p></td></tr><tr><th><p>1</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keeping
+the Examiner connected, check the plausibility of the brake fluid
+level parameter at the Body Computer Node</p></td><td rowspan="2"><p>Continue to Step <strong>4</strong></p></td><td><p>The parameter is not plausible</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p><p>Continue
+to Step <strong>7</strong></p></td></tr><tr><td><p>Impossible to connect with the Body Computer control
+unit</p></td><td><p>Continue to Step <strong>2</strong></p></td></tr><tr><th><p>2</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Body Computer Node electrical power supply is correct.</p></td><td rowspan="1"><p>Continue to Step <strong>3</strong></p></td><td><p>Positive and/or earth
+electrical power supply fault.</p></td><td><p>Replace the defective component (if a fuse
+is involved, search for the cause of the problem).</p></td></tr><tr><th><p>3</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Using
+the Examiner, check the possibility of connecting with the Body
+Computer Node.</p></td><td rowspan="1"><p>Continue to Step <strong>1</strong></p></td><td><p>Impossible to connect
+with the Body Computer control unit</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr><tr><th><p>4</p></th><th><p>CHECK ON CORRECT OPERATION</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the fault is no longer present</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>The fault persists</p></td><td><p>Continue to Step <strong>5</strong></p></td></tr><tr><th><p>5</p></th><th><p>BRAKE FLUID LEVEL CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the brake fluid level is not low</p></td><td rowspan="1"><p>Continue to Step <strong>9</strong></p></td><td><p>Brake fluid level too
+low</p></td><td><p>Continue
+to Step <strong>6</strong></p></td></tr><tr><th><p>6</p></th><th><p>TOP UP BRAKE FLUID LEVEL</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Restore
+the brake fluid level and check that the warning light goes out</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>The warning light does
+not go off</p></td><td><p>Continue to Step <strong>7</strong></p></td></tr><tr><th><p>7</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Keeping
+the diagnostic equipment connected, check that there are no CAN
+errors at the BRAKE NODE</p></td><td rowspan="1"><p>Continue to Step <strong>8</strong></p></td><td><p>Presence of faults at
+the C-CAN</p></td><td><p>Continue to Step <strong>14</strong></p></td></tr><tr><th><p>8</p></th><th><p>CHECKING ELECTRICAL EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Disconnect
+the connector from the fluid level sensor and, using a multimeter,
+check the efficiency of the connection to earth  See <a href="2428027.html">E4010 INSTRUMENT PANEL</a></p></td><td rowspan="1"><p>Continue to Step <strong>9</strong></p></td><td><p>Faulty earth</p></td><td><p>Restore earth connection
+efficiency  See <a href="2428027.html">E4010 INSTRUMENT PANEL</a></p></td></tr><tr><th><p>9</p></th><th><p>CHECKING ELECTRICAL EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+the continuity of the cable from the connector to the Body computer  See <a href="2428027.html">E4010 INSTRUMENT PANEL</a></p></td><td rowspan="1"><p>Continue to Step <strong>10</strong></p></td><td><p>Cable broken</p></td><td><p>Restore connection  See <a href="2428027.html">E4010 INSTRUMENT PANEL</a></p></td></tr><tr><th><p>10</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Connect
+the Examiner and check the plausibility, at the Body Computer Node,
+of the handbrake applied parameter</p></td><td rowspan="1"><p>Continue to Step <strong>11</strong></p></td><td><p>The parameter is not plausible</p></td><td><p>Continue according to the
+instructions for the  See table <a href="2427564.html">K72 HANDBRAKE APPLIED WARNING LIGHT</a></p></td></tr><tr><th><p>11</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Connect
+the Examiner or keep it connected and check the operation of the
+brake fluid level warning light at the Instrument Panel Node through
+active diagnosis</p></td><td rowspan="1"><p>Continue to Step <strong>12</strong></p></td><td><p>The warning light does
+not flash</p></td><td><p>Replace instrument panel <strong>Op. 5560B11</strong></p></td></tr><tr><th><p>12</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Instrument Panel Node electrical power supply is correct.</p></td><td rowspan="1"><p>Continue to Step <strong>13</strong></p></td><td><p>Positive and/or earth
+electrical power supply fault.</p></td><td><p>Replace the defective component (if a fuse
+is involved, search for the cause of the problem).</p></td></tr><tr><th><p>13</p></th><th><p>CHECK ELECTRICAL CONNECTIONS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+the electrical connections between the Body Computer and the Instrument
+Panel, in particular that each individual pin is correctly connected.</p></td><td rowspan="1"><p>Continue to Step <strong>14</strong></p></td><td><p>Electrical connections
+not working.</p></td><td><p>Restore damaged electrical connection.</p></td></tr><tr><th><p>14</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Keeping
+the Examiner connected, check the plausibility of the brake fluid
+level parameter at the Body Computer Node</p></td><td rowspan="1"><p>Continue to Step <strong>15</strong></p></td><td><p>The parameter is not plausible</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr><tr><th><p>15</p></th><th><p>CHECK ON CORRECT OPERATION</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the fault is no longer present</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>Fault persists</p></td><td><p>Replace the brake fluid reservoir
+and sensor  Op. <a href="2429173.html">3330C30 brake fluid reservoir - r + r and wash inside</a></p></td></tr></table></div></section>
+<h2>Topics linked from this page (3)</h2><ul><li><a href="2427564.html">K72 HANDBRAKE APPLIED WARNING LIGHT</a> <span class="meta">fault diagnosis table (symptom -&gt; numbered test steps) · all engines; all production periods</span></li><li><a href="2429173.html">3330C30 brake fluid reservoir - r + r and wash inside</a> <span class="meta">repair procedure (removal / refitting; the operation number is the code) · all engines; all production periods</span></li><li><a href="2428027.html">E4010 INSTRUMENT PANEL</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

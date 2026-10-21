@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guide · Lancia Ypsilon</title>
+<meta name="description" content="How the manual is organised and how to read it.">
+<link rel="stylesheet" href="ai.css">
+</head>
+<body>
+<header><a href="index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="guide.html">guide</a></header>
+<main>
+<h1>Lancia Ypsilon workshop manual: guide</h1>
+<p>Read this first. It explains how the manual is organised, what the codes mean and how to move between pages.</p>
+
+<h2>1. Establish the vehicle first</h2>
+<p>Content differs by engine, production period and equipment. Ask for these before answering, and ignore any topic or block whose <em>Applies to</em> line excludes the car.</p>
+<ul>
+<li>Engines: 1.2 8v, 1.2 16v, 1.4 16v, 1.3 JTD</li>
+<li>Production periods: T.T.</li>
+<li>Equipment: Mechanical gearbox, Smart gearbox, BOSE System, Automatic Air Conditioning, Cruise control, Electric seats, Air Conditioner, ESP, Powered sunroof, Air Bag, Passenger&#x27;s Air Bag, Side Bag, Heater, Euro 3, Two-zone climate control system, Sound System with CD player, ESP, High setup, Low setup. </li>
+</ul>
+<p>Some topics exist as several variants with the same code and title (for example one per body or per drive side). Pick the variant whose <em>Applies to</em> matches the car.</p>
+
+<h2>2. How the pages link</h2>
+<ul>
+<li>Every topic has its own page, <code>t/&lt;id&gt;.html</code>, with its path (the breadcrumb at the top), its kind, and what it applies to.</li>
+<li><strong>Subtopics</strong> lists the children. Chapters have no content of their own, only subtopics.</li>
+<li><strong>Topics linked from this page</strong> lists everything the text points to: pinouts, components, procedures.</li>
+<li><strong>Topics that link to this page</strong> is the reverse: use it to find every diagram, pinout and procedure that involves a component or topic.</li>
+<li>Diagrams and location drawings are images; each has a link to the image file.</li>
+</ul>
+
+<h2>3. Sections</h2>
+<ul><li><a href="t/2427645.html">Technical Data</a>: technical data / specifications</li><li><a href="t/2427361.html">Descriptions</a>: system description</li><li><a href="t/2427465.html">Fault diagnosis</a>: fault diagnosis table (symptom -&gt; numbered test steps)</li><li><a href="t/2429780.html">Test</a>: test / check procedure</li><li><a href="t/2428803.html">Procedures</a>: repair procedure (removal / refitting; the operation number is the code)</li><li><a href="t/2427881.html">Electrical equipment</a>: electrical functions, harnesses and pinouts</li></ul>
+<p>Typical fault-tracing route: <em>Fault diagnosis</em> (symptom table, numbered steps) -> <em>Test</em> (checks) -> <em>Electrical equipment</em> (functional description, wiring diagram, pinouts) -> <em>Procedures</em> (replace the part, by operation number).</p>
+
+<h2>4. Electrical equipment codes</h2>
+<ul>
+<li><strong>Functions</strong> are coded E + 4 digits (E1010 supply). Each has a DESCRIPTION, a FUNCTIONAL DESCRIPTION (which fuse feeds it, which pins and components are involved), a WIRING DIAGRAM and a COMPONENT LOCATION.</li>
+<li><strong>Components</strong> are coded with a letter and 3 digits (B002, F036, I020, M001). Families:</li>
+</ul>
+<ul class="families"><li>A Starting - recharging</li><li>B Various fuse holders and valves</li><li>C Earths</li><li>D Intermediate couplings</li><li>E Instrument panel and indicators</li><li>F Exterior lights</li><li>G Interior lights</li><li>H Manual electric controls</li><li>I Switches</li><li>J Relays</li><li>K Sensors and sender units</li><li>L Electromagnets and solenoid valves</li><li>M Intermittent and timed electronic devices,..</li><li>N Electric motors and actuators</li><li>O Resistances and dimmers</li><li>P Various consumers</li><li>Q Safety devices</li></ul>
+<ul>
+<li><strong>Pinouts</strong> give every pin: wire section (mm²), wire colour (decoded below) and the pin at the other end. "via splice" means the wire joins others at a splice (a diamond in the diagrams).</li>
+<li><strong>Fuses</strong> are F + number inside a junction unit; the same number can exist in several units, so always name the unit. Ratings and locations: see the fuse and relay index.</li>
+<li>Circuit labels: INT = ignition-switched supply, CPL = permanent battery supply, CAN / A-BUS = data lines.</li>
+</ul>
+
+<h2>5. Wire colour codes</h2>
+<p>From the manual's "Cable colour code" page. The first letter is the main colour; the second letter is the stripe, so HR = grey with red stripe.</p>
+<table><tr><th>Code</th><th>Colour</th></tr><tr><td>N</td><td>black</td></tr><tr><td>B</td><td>white</td></tr><tr><td>A</td><td>light blue</td></tr><tr><td>M</td><td>brown</td></tr><tr><td>G</td><td>yellow</td></tr><tr><td>R</td><td>red</td></tr><tr><td>V</td><td>green</td></tr><tr><td>H</td><td>grey</td></tr><tr><td>S</td><td>pink</td></tr><tr><td>C</td><td>orange</td></tr><tr><td>Z</td><td>violet</td></tr><tr><td>L</td><td>blue</td></tr></table>
+<p>Connector bodies are given by Italian colour name, decoded in the pages: bianco = white, nero = black, marrone = brown, grigio = grey, azzurro = light blue, verde = green, rosso = red, giallo = yellow, blu = blue, viola = violet, arancio = orange, arancione = orange, rosa = pink, naturale = natural.</p>
+
+<h2>6. Background notes</h2>
+<ul><li><a href="notes/data-model.md">data-model.md</a>: wire colour codes, connector-body colours, how pinouts describe every wire, what only the diagrams add</li><li><a href="notes/rendering-rules.md">rendering-rules.md</a>: how the manual is structured: Removing/Refitting parts, Op. calls between procedures, variants</li></ul>
+
+<h2>7. Lookups</h2>
+<ul>
+<li><a href="lookup/components.html">Component index</a>: component -> pinouts, replacement procedures, and everything that refers to it</li>
+<li><a href="lookup/fuses.html">Fuse and relay index</a>: rating and junction unit of every fuse and relay, and every sentence that names it</li>
+<li><a href="lookup/operations.html">Operation index</a>: operation or test code -> topic</li>
+</ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="llms.txt">llms.txt</a></footer>
+</body>
+</html>

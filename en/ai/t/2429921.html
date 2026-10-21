@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E6020 AIR CONDITIONING - Functional description · Lancia Ypsilon</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods; only with equipment: Two-zone climate control system. Electrical equipment &gt; Electrical functions &gt; E60 Climate control system &gt; E6020 AIR CONDITIONING &gt; E6020 AIR CONDITIONING - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2428088.html">E60 Climate control system</a> › <a href="2428097.html">E6020 AIR CONDITIONING</a> › <span>E6020 AIR CONDITIONING - Functional description</span></nav>
+<h1><span class="code">E6020</span> AIR CONDITIONING - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E60 Climate control system &gt; E6020 AIR CONDITIONING &gt; E6020 AIR CONDITIONING - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: Two-zone climate control system</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429921">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429921</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: Two-zone climate control system</p><h3>Functional description</h3><p>Climate control control unit 
+                              <strong>M70 is supplied
+when the ignition is turned on (INT) at pin 39 by the line protected
+by fuse F49 of underfacia junction unit B2.</strong>
+                              ; it is supplied
+directly at pin 30 from a line protected by fuse 
+                              <strong>F39 of underfacia
+control unit B2.</strong></p><p>Pin 40 of 
+                              <strong>M70 is earthed.</strong></p><p>Sensors 
+                              <strong>K111 (right lower treated air)
+and K113 (left lower treated air), K110 (right upper treated air)
+and K112 (left upper treated air) are connected to control unit
+M70: these sensors receive a reference earth from pin 11 and send
+signals to pins 20, 17, 9 and 18 of M70.</strong></p><p>The frost sensor 
+                              <strong>K86 receives a reference
+earth from pin 11 and sends a signal to pin 8 of M70  if the evaporator
+temperature is too low.</strong></p><p>The solar ray sensor 
+                              <strong>K90 informs the
+control unit of the heat coming from rays: it receives a 5V supply
+from pin 7 control unit M70 and gives out two signals: to pin 19
+for the right area and to pin 10 for the left area.</strong></p><p>The exhaust gas presence sensor (A.Q.S.) 
+                              <strong>K64</strong>
+                               supplies
+a recirculation control signal when the air pollution exceeds pre-set
+levels: it is supplied at pin 1 from the line controlled by the
+ignition (INT/A) protected by fuse F31 of underfacia control unit 
+                              <strong>B2</strong>
+                              .
+pin 2 is earthed and pin 3 sends a signal to pin 6 of 
+                              <strong>M70.</strong></p><p>The demisting sensor 
+                              <strong>K125 (located in
+the same unit as the rain sensor 
+                                 See
+		E3020
+		WINDSCREEN WASH/WIPE
+                                 and
+the dusk sensor 
+                                 See
+		E2010
+		SIDE LIGHTS / NO. PLATE LIGHTS
+                                 ),
+receives an ignition-operated supply (INT) from the line protected
+by fuse F49 of the junction unit under the dashboard B2.</strong>
+                              ; and
+sends a signal to pin 16 of 
+                              <strong>M70.</strong></p><p>The air conditioning system is equipped
+with one recirculation actuator (
+                              <strong>N82</strong>
+                              ), two air blending actuators
+(
+                              <strong>N78</strong>
+                               and 
+                              <strong>N79</strong>
+                              ) and two air districution actuators (
+                              <strong>N80</strong>
+                               and 
+
+                              <strong>N83</strong>
+                              ).</p><p>The recirculation actuator 
+                              <strong>N82 is operated
+by the control unit M70 from pins 12 and 22.</strong></p><p>The blend actuators 
+                              <strong>N78 and N79 are operated
+by the control unit M70 by pins 32-37 and 35-24, respectively, receiving
+the supply for controlling the potentiometer from pin 31 of M70,
+a reference earth from pin 11 of M70 and sending a feedback signal
+to pins 25 and 26  of M70.</strong></p><p>The distribution actuators 
+                              <strong>N83 and N80
+are operated by the control unit M70 by pins 33-34 and  36-38, respectively,
+receive a supply for controlling the potentiometer from pin 31of
+M70, a reference earth from pin 11 of M70 and send a feedback signal
+to pins 27 and 28 of M70.</strong></p><p>Fan 
+                              <strong>N85</strong>
+                               (with built-in electronic
+speed regulation circuit) is ignition-operated (INT) by a line protected
+by fuse 
+                              <strong>F31</strong>
+                              of underfacia control unit 
+                              <strong>B2</strong>
+                               and controlled
+by relay 
+                              <strong>F8</strong>
+                              and dedicated fuse F8 of engine compartment junction
+unit 
+                              <strong>B1</strong>
+                               - it receives an input signal from the control unit
+controlling the various speeds from pin 5 of  
+                              <strong>M70</strong>
+                                and returns
+a feedback signal to pin 29 of 
+                              <strong>M70</strong></p><p>Pin 21 of 
+                              <strong>M70 controls activation of
+the compressor .</strong><a href="2428101.html">E6021 COMPRESSOR ENGAGEMENT</a></p><p>The outdoor temperature sensor is located
+on door mirror 
+                              <strong>P60: the sensor is connected to the control unit
+on door M66 and thence, via the CAN network, to M70.</strong></p><p>Control unit M70 is connected via the CAN line, from pins 1 and 2 to Body Computer M1 and the other nodes, which exchange the following signals:</p><ul><li>speedometer signal;</li><li>windscreen washer activation signal for recirculation
+activation;</li><li>battery voltage signal</li></ul></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="2428101.html">E6021 COMPRESSOR ENGAGEMENT</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

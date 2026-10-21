@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E3040 CENTRAL LOCKING - Description · Lancia Ypsilon</title>
+<meta name="description" content="system description. all engines; all production periods; only with equipment: High setup. Electrical equipment &gt; Electrical functions &gt; E30 Electrically activated devices &gt; E3040 CENTRAL LOCKING &gt; E3040 CENTRAL LOCKING - Description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2427948.html">E30 Electrically activated devices</a> › <a href="2427981.html">E3040 CENTRAL LOCKING</a> › <span>E3040 CENTRAL LOCKING - Description</span></nav>
+<h1><span class="code">E3040</span> CENTRAL LOCKING - Description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E30 Electrically activated devices &gt; E3040 CENTRAL LOCKING &gt; E3040 CENTRAL LOCKING - Description</dd>
+<dt>Kind</dt><dd>system description</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: High setup</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427982">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427982</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: High setup</p><h3>Description</h3><p>The door locks are operated simultaneously by:</p><ul><li>the key;</li><li>the door handles;</li><li>driver door buttonns</li><li>remote control.</li></ul><p>The remote control key has 3 buttons which
+make it possible to operate the central locking system: one button
+for unlocking the doors, one for locking the vehicle and one for releasing
+the boot;</p><p>The locks are equiped with an additional
+motor that performs the dead lock function.</p><p>The DEAD-LOCK function makes it possible
+to mechanically disconnect the door interior opening handles and
+the safety knob so that the door cannot be opened from the inside (e.g.
+after the glass has been broken in a theft attempt). It is impossible
+to get out of the passenger compartment once the dead-lock function
+has been applied.</p><p>The Dead Lock function is engaged by turning
+the mechanical key a second time within 1 second of locking the
+doors or via remote control at the time the door is locked. In the latter
+case, the lock key is pressed within 1 second of the first press.</p><p>In general, the door/boot lock/release strategy
+is governed by the Body Computer while the door and boot control
+units control the lock motors in accordance with commands transmitted
+by the Body Computer.</p><p>Lock operation is managed by the Body Computer,which
+monitors lock status via signals from switches on the locks (the
+same signals are used for light timing). The lock command is therefore
+executed only with all the doors properly closed and the locks released. conversely,
+the &#x27;release&#x27; command is only issued when the locks are locked;</p><p>The Body Computer also manages dead-lock
+function deactivation (the release operation requires preliminary
+dead-lock deactivation)</p><p>The two door lock/release button are  located
+on the driver door control unit and work in the same way as the
+controls sent via key.</p><p>The LED to the side of the driver&#x27;s door safety catch issues the following signals:</p><ul><li>Catches locked: the LED lights up for 3 seconds. If, when
+the locks are locked some of the doors or the boot is not properly
+shut, then the LED will flash at 3 Hz for 3 seconds;</li><li>Dead-lock engagement: after the dead-lock has been engaged,
+the LED will flash twice for 0.5 seconds and then swith to the deterrent
+signal (with alarm function present).</li><li>Unlocking the locks: the LED goes out</li></ul><p>The instrument panel downloads a door status
+signal from the CAN network and turns on the door open warning light
+If one of the doors or the boot or bonnet lid is open and the speed
+is above 4 Km/h then an acoustic signal is emitted.</p><p>A special instrument panel feature can be
+used to decide whether to release all doors or only the driver side
+front door while all other doors and the boot remain locked.</p><p>A special instrument panel feature can be
+used to enable/disable the door lock beyond a set speed threshold
+(20 km/h). In this case the Body Computer activates the door lock beyond
+the set threshold.</p><p>If the doors are locked by this function,
+the user can still release the doors and they will not be locked
+even if the speed exceeds 20 km/h.</p><p>Similarly, the doors will not be released
+if speed drops below 20 km/h with the doors locked.</p><p>It is possible to select the boot release operating mode using the special setup:</p><ul><li>boot release controlled by central locking: the status
+of the boot follows the status of the door locks;.</li><li>independent boot release: the boot is locked when the
+doors are locked, whilst it is possible to unlock it independently
+of the unlocking of the doors.<a href="2427989.html">E3045 BOOT AND FUEL FLAP OPENING</a>.</li></ul><p>The doors are automatically released if
+the inertia switch is activated: the instrument panel receives a
+signal from the switch, lights up the relevant warning light and
+communicates the activation to the Body Computer via the CAN network.</p><p>The door lock circuit is protected by a
+special fuse located in the unit under the dashboard.</p><p>The remote control receiver aerial is connected
+directly to the Body Computer which contains the electronics for
+the actual receiver.</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="2427989.html">E3045 BOOT AND FUEL FLAP OPENING</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

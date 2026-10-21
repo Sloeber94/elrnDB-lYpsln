@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5040DB Check on operation of windscreen misting sensor · Lancia Ypsilon</title>
+<meta name="description" content="test / check procedure. all engines; all production periods. Test &gt; 50 AUXILIARY UNITS &gt; 5040 AIR CONDITIONING CASING AND COMPONENTS &gt; 5040D air conditioner controls &gt; 5040DB Check on operation of windscreen misting sensor">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2429780.html">Test</a> › <a href="2429797.html">50 AUXILIARY UNITS</a> › <a href="2429798.html">5040 AIR CONDITIONING CASING AND COMPONENTS</a> › <a href="2429805.html">5040D air conditioner controls</a> › <span>5040DB Check on operation of windscreen misting sensor</span></nav>
+<h1><span class="code">5040DB</span> Check on operation of windscreen misting sensor</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Test &gt; 50 AUXILIARY UNITS &gt; 5040 AIR CONDITIONING CASING AND COMPONENTS &gt; 5040D air conditioner controls &gt; 5040DB Check on operation of windscreen misting sensor</dd>
+<dt>Kind</dt><dd>test / check procedure</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429806">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429806</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>With the  Examiner on the voltmeter
+function, select full scale deflection of 20 volts and time base of
+5 seconds. Connect the black probe to the vehicle earth and the
+red probe to pin 3 of the fog sensor. Turn the key on and press
+the START button.</p><p>The signal displayed must be a PWM pulse
+train with a frequency of 100 hz and a  Duty  Cycle that varies
+between 10% and 90% as shown in the attached table.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The first 100 sensor output readings
+must not be considered (1 sec).</p></aside><p>Pin out:</p><ul><li>1. earth</li><li>2. +15</li><li>3. not connected</li><li>4. signal output</li></ul><figure class="photo"><img class="zoomable" src="../../../media/2045381.jpg" alt="" loading="lazy"></figure></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>PWM% Duty Cycle = T1 / T2 where:</p><ul><li>T1 = pulse duration</li><li>T2 = 1/f = 1/100 Hz = Transmission duration</li><li>T2 = 10msec ± 7%</li></ul><p>PWM from 20% to 70%</p><p>This is the normal sensor operating range</p><p>Within this range, the sensor will supply
+a PWM signal proportional to the amount of misting on the windscreen.</p><p>PWM = 10%</p><p>Indicates internal sensor fault This fault
+is defined as follows:</p><p>sensor self-diagnostics revealed an internal
+electrical fault</p><p>PWM = 80%</p><p>This condition indicates a sensor limit
+condition. This is defined as follows:</p><p>The sensor optics are saturated due to excessive direct
+sunlight.</p><p>The signal is transmitted as long as the
+above limit condition persists.</p><p>PWM = 90%</p><p>This condition indicates a limit condition
+or sensor fault. This is defined as one of the following:</p><p>Sensor optics are saturated due to excessive reflected
+energy. This may be due to a very high level of misting or an object
+between the windscreen surface and sensor.</p><p>Sensor internal temperature reached and exceeded
+70°C.  The internal process is disabled to avoid damage. A fault
+signal is transmitted as long as the excess temperature persists.</p><p>PWM = 0 % and 100%</p><p>These two statuses will never be transmitted
+by the sensor.</p><p>Certain hardware faults may be interpreted
+by the receiving input stage as PWM signals of 0% or 100%. This
+is due to the static nature of the signal (microcomputer not processing
+or under conditions of s.c. to +12V or GND or open circuits).</p><p>Messages transmitted by PWM</p><p>100% Sensor off or fault in communication
+or s.c. to +12V</p><p>90% Sensor saturated or blocked or with
+excess temperature</p><p>80% Sensor fualty or directly radiated by
+sun</p><p>70% Misting intensity from Max. to moderate</p><p>60% Misting intensity from moderate to light</p><p>50% Misting intensity from light to identifiable</p><p>40% Misting intensity slightly visible</p><p>30% Misting intensity not visible to the
+human eye</p><p>20% Windscreen clear - No misting</p><p>10% Internal sensor fault</p><p>0% Sensor off or fault in communication
+or s.c to GND.</p></section>
+
+<h2>Topics that link to this page (1)</h2><ul><li><a href="2427589.html">L57 WINDSCREEN MISTING WITH THE FORMATION OF CONDENSATION</a> <span class="meta">fault diagnosis table (symptom -&gt; numbered test steps) · all engines; all production periods</span></li></ul>
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

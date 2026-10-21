@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K68 CONTROL PANEL ESP WARNING LIGHT ON · Lancia Ypsilon</title>
+<meta name="description" content="fault diagnosis table (symptom -&gt; numbered test steps). all engines; all production periods. Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K68 CONTROL PANEL ESP WARNING LIGHT ON">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427465.html">Fault diagnosis</a> › <a href="2427528.html">K INSTRUMENT PANEL</a> › <span>K68 CONTROL PANEL ESP WARNING LIGHT ON</span></nav>
+<h1><span class="code">K68</span> CONTROL PANEL ESP WARNING LIGHT ON</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Fault diagnosis &gt; K INSTRUMENT PANEL &gt; K68 CONTROL PANEL ESP WARNING LIGHT ON</dd>
+<dt>Kind</dt><dd>fault diagnosis table (symptom -&gt; numbered test steps)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427561">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2427561</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The brakes node sends the ABS warning light on message via the
+C-CAN to the Body Computer which makes it available via the B-CAN
+network to the instrument panel node.</p></aside><aside class="note"><img class="icon" src="../../../media/768.jpg" alt="" loading="lazy"><p>If there are faults at the C-CAN, the control unit failure warning
+lights will light up.  The CAN INFORMATION check is designed precisely
+for this purpose</p></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><div class="table"><table><tr><td></td><td></td><td colspan="3"><p>Results of the tests</p></td></tr><tr><th><p>0</p></th><th><p>PRELIMINARY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+the instrument panel display for an ESP system fault message</p></td><td rowspan="1"><p>Continue to Step <strong>4</strong></p></td><td><p>Message present</p></td><td><p>Continue to Step <strong>1</strong></p></td></tr><tr><th><p>1</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Connect the EXAMINER diagnostic equipment and check the CAN NETWORK INFORMATION:</p><ul><li>absence of non activated control units</li><li>absence of control units with errors</li><li>absence of control units with CAN network with errors</li></ul></td><td rowspan="2"><p>Continue to Step <strong>3</strong></p></td><td><p>Presence of fault in the
+CAN</p></td><td><p>Continue
+as instructed by the tester</p></td></tr><tr><td><p>Presence of errors at Brake Node</p></td><td><p>Continue to Step <strong>2</strong></p></td></tr><tr><th><p>2</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keep the tester connected and check the BRAKE NODE for:</p><ul><li>system/component faults</li><li>warning light fault/warning light damaged error</li></ul></td><td rowspan="2"><p>Continue to Step <strong>3</strong></p></td><td><p>System/component fault</p></td><td><p>Continue as instructed by
+the tester</p></td></tr><tr><td><p>Warning light fault/warning light damaged</p></td><td><p>Continue to Step <strong>3</strong></p></td></tr><tr><th><p>3</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Keep the tester connected and check the BRAKE NODE for:</p><ul><li>the operation of the ESP warning light through active
+diagnosis</li></ul></td><td rowspan="1"><p>Continue to Step <strong>5</strong></p></td><td><p>Warning light does not
+flash</p></td><td><p>Continue
+to Step <strong>4</strong></p></td></tr><tr><th><p>4</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Keeping the diagnostic equipment connected, check at the INSTRUMENT PANEL NODE:</p><ul><li>the operation of the ESP warning light through active
+diagnosis</li></ul></td><td rowspan="1"><p>Continue to Step <strong>5</strong></p></td><td><p>Warning light does not
+flash</p></td><td><p>Replace
+the instrument panel</p></td></tr><tr><th><p>5</p></th><th><p>CHECK ON CORRECT OPERATION</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the fault is no longer present</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>Fault persists</p></td><td><p>Replace ABS control unit</p></td></tr></table></div></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The brakes node sends the ABS warning light on message via the
+C-CAN to the Body Computer which makes it available via the B-CAN
+network to the instrument panel node.</p></aside><aside class="note"><img class="icon" src="../../../media/768.jpg" alt="" loading="lazy"><p>If there are faults at the C-CAN, the control unit failure warning
+lights will light up.  The CAN INFORMATION check is designed precisely
+for this purpose</p></aside></section><section class="block"><p class="applies">Applies to: all engines; all production periods</p><div class="table"><table><tr><td></td><td></td><td colspan="3"><p>Results of the tests</p></td></tr><tr><th><p>0</p></th><th><p>PRELIMINARY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Connect the EXAMINER diagnostic equipment and check the CAN NETWORK INFORMATION:</p><ul><li>For inactive control units</li><li>For control units with errors</li><li>For control units with CAN errors</li></ul></td><td rowspan="2"><p>Continue to Step <strong>1</strong></p></td><td><p>Presence of fault in the
+CAN</p></td><td><p>Continue
+as instructed by the tester</p></td></tr><tr><td><p>Impossible to converse with the Body Computer</p></td><td><p>Continue to Step <strong>7</strong></p></td></tr><tr><th><p>1</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="2"></td><td rowspan="2"><p>Keep the tester connected and check the BRAKE NODE for:</p><ul><li>System/component faults</li><li>CAN faults</li></ul></td><td rowspan="2"><p>Continue to Step <strong>2</strong></p></td><td><p>System/component faults</p></td><td><p>Continue as instructed by
+the tester</p></td></tr><tr><td><p>Presence of faults at the C-CAN</p></td><td><p>Continue to Step <strong>9</strong></p></td></tr><tr><th><p>2</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Using
+the Examiner check, in the Instrument Panel Node ambient, that there
+are no errors and the following parameters are present.</p></td><td rowspan="1"><p>Continue to Step <strong>3</strong></p></td><td><p>There are errors</p></td><td><p>Continue in accordance with
+the instructions for the diagnostic equipment</p></td></tr><tr><th><p>3</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Instrument Panel Node electrical power supply is correct.</p></td><td rowspan="1"><p>Continue to Step <strong>4</strong></p></td><td><p>Positive and/or earth
+electrical power supply fault.</p></td><td><p>Replace the defective component (if a fuse
+is involved, search for the cause of the problem).</p><p>Continue
+to Step <strong>4</strong></p></td></tr><tr><th><p>4</p></th><th><p>CHECK ELECTRICAL CONNECTIONS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+the electrical connections between the Body Computer and the Instrument
+Panel, in particular that each individual pin is correctly connected.</p></td><td rowspan="1"><p>Continue to Step <strong>5</strong></p></td><td><p>Electrical connections
+not working.</p></td><td><p>Restore damaged electrical connection.</p></td></tr><tr><th><p>5</p></th><th><p>CHECK WITH ACTIVE DIAGNOSIS</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>With
+the Examiner in the Instrument Panel Node ambient, check, in active
+diagnosis, that the ESP warning light is correctly activated</p></td><td rowspan="1"><p>Continue to Step <strong>6</strong></p></td><td><p>The ESP light does not
+flash</p></td><td><p>Replace
+the instrument panel <strong>Op. 5560B11</strong></p></td></tr><tr><th><p>6</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="3"></td><td rowspan="3"><p>Using
+the Examiner, check, in the Body Computer Node ambient, that there
+are no errors and that the specific parameter varies.</p></td><td rowspan="3"><p>Continue to Step <strong>9</strong></p></td><td><p>Impossible to connect
+with the Body Computer control unit.</p></td><td><p>Continue to Step <strong>7</strong></p></td></tr><tr><td><p>Errors present.</p></td><td><p>Continue in accordance with the instructions for the
+diagnostic equipment.</p></td></tr><tr><td><p>The parameter values do not change</p></td><td><p>Continue to Step <strong>9</strong></p></td></tr><tr><th><p>7</p></th><th><p>ELECTRIC POWER SUPPLY CHECK</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the Body Computer Node electrical power supply is correct.</p></td><td rowspan="1"><p>Continue to Step <strong>8</strong></p></td><td><p>Positive and/or earth
+electrical power supply fault.</p></td><td><p>Replace the defective component (if a fuse
+is involved, search for the cause of the problem).</p></td></tr><tr><th><p>8</p></th><th><p>CHECK WITH DIAGNOSTIC EQUIPMENT</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Using
+the Examiner, check the possibility of connecting with the Body
+Computer Node.</p></td><td rowspan="1"><p>Continue to Step <strong>6</strong></p></td><td><p>Impossible to connect
+with the Body Computer control unit.</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr><tr><th><p>9</p></th><th><p>CHECK ON CORRECT OPERATION</p></th><th><p>All OK</p></th><th><p>Problems met</p></th><th><p>Operation</p></th></tr><tr><td rowspan="1"></td><td rowspan="1"><p>Check
+that the fault is no longer present</p></td><td rowspan="1"><p>End of diagnosis</p></td><td><p>The fault persists</p></td><td><p>Replace the Body Computer <strong>Op. 5505A32</strong></p></td></tr></table></div></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

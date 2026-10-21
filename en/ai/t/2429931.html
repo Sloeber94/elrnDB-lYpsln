@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E7051 ROBOTIZED GEARBOX - Functional description · Lancia Ypsilon</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.4 16v; all production periods; only with equipment: Smart gearbox. Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7051 ROBOTIZED GEARBOX &gt; E7051 ROBOTIZED GEARBOX - Functional description">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Lancia Ypsilon workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="2427881.html">Electrical equipment</a> › <a href="2427882.html">Electrical functions</a> › <a href="2428113.html">E70 Vehicle electronic systems</a> › <a href="2428138.html">E7051 ROBOTIZED GEARBOX</a> › <span>E7051 ROBOTIZED GEARBOX - Functional description</span></nav>
+<h1><span class="code">E7051</span> ROBOTIZED GEARBOX - Functional description</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; Electrical functions &gt; E70 Vehicle electronic systems &gt; E7051 ROBOTIZED GEARBOX &gt; E7051 ROBOTIZED GEARBOX - Functional description</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.4 16v; all production periods; only with equipment: Smart gearbox</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429931">https://sloeber94.github.io/elrnDB-lYpsln/en/#/2429931</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.4 16v; all production periods; only with equipment: Smart gearbox</p><h3>Functional description</h3><p>The automatic transmission control unit 
+                              <strong>M54
+controls and governs the entire gearbox management system.</strong></p><p>The direct supply for the control unit arrives
+from the battery, from the line for fuse 
+                              <strong>F23 of the engine compartment
+junction unit B1, at pin 27 of connector A of M54.</strong></p><p>The supply controlled by the ignition (15/54)
+reaches pin 28 from connector A of 
+                              <strong>M54  via the line for fuse
+F16 of junction unit B1.</strong></p><p>Pins 1 and 2 of connector A of 
+                              <strong>M54</strong>
+                               are
+earthed.</p><p>A set of sensors and potentiometers on the
+gearbox informs the control unit of the engaged gear: the potentiometers
+are supplied from pin 73 of connector B; pin 66 provides the reference
+earth: the gear selector potentiometer 
+                              <strong>K68</strong>
+                               provides a signal
+to pin 51 of connector A; the gear engagement potentiometer 
+                              <strong>K69</strong>
+                               returns
+a signal to pin 39 of connector A; the hydraulic unit oil pressure
+sensor 
+                              <strong>K96</strong>
+                               returns a signal to pin 40 of connector A.</p><p>The clutch position potentiometer 
+                              <strong>K95</strong>
+                               is
+supplied from pin 79 of connector B, receives a reference earth
+from pin 59 and returns a signal to pin 52 of connector A of 
+                              <strong>M54</strong>
+                              .</p><p>Pins 38 and 50 of connector A 
+                              <strong>M54</strong>
+                               are
+connected to the car speed sensor (gearbox input) 
+                              <strong>K77</strong>
+                              .</p><p>The gear control unit 
+                              <strong>H37</strong>
+                               is connected
+to the control unit 
+                              <strong>M54</strong>
+                               to signal the request to engage a
+gear: these signals are sent to pins 67, 74, 68 of connector B of 
+                              <strong>M54</strong>
+                              ;
+and to pin 26 of connector A; a reference earth is received from
+pin 66 of connector B, whilst the supply arrives from the line controlled
+by the ignition (15/54) protected by fuse 
+                              <strong>F16 of engine compartment
+junction unit B1</strong></p><p>The operating mode selection button &#x27;E&#x27; 
+                              <strong>H34
+is connected to the control unit M54 at pin 77 of connector B. 
+This button receives a supply from the line (INT) protected by fuse F51
+of the junction unit under the dashboard B2.</strong></p><p>Pin 69 of connector B of 
+                              <strong>M54 receives
+the signal coming from the brake lights switch I30, with the supply
+controlled by the ignition (INT) from fuse F37 of underfacia  junction
+unit B2.</strong></p><p>In accordance with the operating logic,
+the control unit controls the electrohydraulic unit located on the
+gearbox which effects the gear change: the electric pump 
+                              <strong>N47</strong>
+                              ,
+which keeps the oil in the hydraulic unit under pressure, is controlled
+from pin 31 of connector A.</p><p>The pump 
+                              <strong>N47 is controlled by a specific
+relay J87 supplied by the line for the specific shunt fuse B43.</strong></p><p>The control unit then controls the opening of the hydraulic unit solenoids:</p><ul><li>the two gear engagement solenoids <strong>L51</strong> and <strong>L52</strong> are
+controlled from pins 32 and 44 of connector A of <strong>M54</strong> ;</li><li>the two gear selection solenoids <strong>L53</strong> and <strong>L54</strong> are
+controlled from pins 29 and 3 of connector A of <strong>M54</strong> ;</li><li>the clutch control solenoid <strong>L56</strong> is controlled from
+pin 43 3 of connector A of <strong>M54</strong> .</li></ul><p>A safety signal comes from pin 42 of connector
+A of 
+                              <strong>M54 for the starting enablement relay pin 50 of the starter
+motor A20;</strong>
+                               the signal requesting starting reaches pin 76 of connector
+B 
+                              <a href="2428036.html">E5010 STARTING AND RECHARING</a>
+                              .</p><p>The control unit 
+                              <strong>M54</strong>
+                               also manages
+the door open buzzer: the driver&#x27;s door open signal - catch 
+                              <strong>N50</strong>
+                               -
+ reaches pin 78 of connector B of 
+                              <strong>M54</strong>
+                              ;</p><p>Signals for the gearbox failure warning
+light in instrument panel 
+                              <strong>E50, and the instrument gear indication
+display, are sent via the CAN network - pins 33-45 and 7-19 of connector A
+of M54.</strong></p><p>The speedometer signal is downloaded via
+the CAN network.</p><p>Pin 48 of connector A is connected to engine
+management control unit 
+                              <strong>M10</strong>
+                              , from which it receives an engine
+rpm signal.</p><p>The control for the buzzer, located in the
+instrument panel 
+                              <strong>E50, leaves from pin 80 of connector B.</strong></p><p>Self-diagnostic data can be read by connecting
+the unit to connector G of Body Computer 
+                              <strong>M1 - pin 7:  this receives
+signals from pin 49 of connector A of  M54.</strong>
+                               (the line is shared with
+the engine control unit 
+                              <strong>M10</strong>
+                               via the relevant tester line.</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="2428036.html">E5010 STARTING AND RECHARING</a> <span class="meta">chapter (index of subtopics) · engines: 1.3 JTD; all production periods; only with equipment: Smart gearbox</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-lYpsln/en/">https://sloeber94.github.io/elrnDB-lYpsln/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

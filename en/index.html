@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop manual</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2' y='2' width='12' height='12' rx='2' fill='%23b3121f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/elrnDB/shared/app.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menu" class="icon-button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="brand" href="#/"><span id="model"></span></a>
+  <a class="all-models" href="/elrnDB/">&larr; All models</a>
+</header>
+
+<aside id="sidebar" class="sidebar">
+  <a class="all-models" href="/elrnDB/">&larr; All models</a>
+  <div class="sidebar-head">
+    <a class="brand wide" href="#/"><span id="model-wide"></span></a>
+    <button class="icon-button collapse" data-nav-toggle title="Hide sidebar" aria-label="Hide sidebar">&laquo;</button>
+  </div>
+
+  <section class="filters">
+    <label><span data-label="Engine"></span><select id="engine"></select></label>
+    <label><span data-label="Production"></span><select id="period"></select></label>
+    <label><span data-label="Theme"></span><select id="theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
+    <details id="equipment">
+      <summary><span data-label="Highlight equipment "></span><span id="equipment-count"></span></summary>
+      <p class="hint"><span class="swatch match"></span><span data-label="matches your car"></span>
+        <span class="swatch other"></span><span data-label="other equipment"></span></p>
+      <div id="options"></div>
+      <button id="clear-options" class="link-button" type="button" data-label="Clear" aria-label="Clear"></button>
+    </details>
+  </section>
+
+  <div class="search">
+    <input id="search" type="search" autocomplete="off" aria-label="Search">
+    <div id="scope" class="scope" role="radiogroup" aria-label="Search in">
+      <label><input type="radio" name="scope" value="titles" checked><span data-label="Chapters"></span></label>
+      <label><input type="radio" name="scope" value="text"><span data-label="Content"></span></label>
+    </div>
+  </div>
+  <div class="tree-tools"><button id="expand-all" class="link-button" type="button">Expand all</button> · <button id="collapse-all" class="link-button" type="button">Collapse all</button></div>
+  <nav id="tree" class="tree" aria-label="Contents"></nav>
+  <div id="results" class="results" hidden></div>
+  <div id="resizer" class="resizer" title="Drag to resize, double-click to reset"></div>
+</aside>
+<button class="show-nav" data-nav-toggle title="Show sidebar" aria-label="Show sidebar">&raquo;</button>
+
+<main id="page" class="page" tabindex="-1"><p class="loading">Loading…</p></main>
+
+<div id="viewer" class="viewer" hidden>
+  <div class="viewer-bar">
+    <span id="viewer-title"></span>
+    <button data-zoom="in" aria-label="Zoom in">+</button>
+    <button data-zoom="out" aria-label="Zoom out">&minus;</button>
+    <button data-zoom="fit">Fit</button>
+    <a id="viewer-open" target="_blank" rel="noopener">Open</a>
+    <button data-zoom="close" aria-label="Close">&times;</button>
+  </div>
+  <div id="stage" class="stage"><img id="viewer-img" alt=""></div>
+</div>
+
+<script src="/elrnDB/shared/app.js"></script>
+</body>
+</html>
